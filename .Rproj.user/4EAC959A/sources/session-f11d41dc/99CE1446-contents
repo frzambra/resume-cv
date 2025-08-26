@@ -1,0 +1,17 @@
+library(fs)
+library(terra)
+
+matteo <- rast('~/Descargas/matteo.jpeg')
+m <- flip(matteo,'vertical')
+
+e <- draw()
+
+m2 <- crop(m,e)
+
+b1 <- m2[[1]]
+
+b2 <- b1[1:5,1:4,drop=FALSE]
+
+plot(b2)
+text(b2)
+plot(m)
