@@ -60,7 +60,7 @@ sidebar:
         - QGIS
         - SAGA
         - SNAP - ESA
-    - name: Datos satelitales
+    - name: Manejo de datos satelitales
       items:
         - MODIS
         - ERA5/ERA5-Land
@@ -69,6 +69,20 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
+    - name: Curso de espacialización en ciencia de datos (Coursera)
+      items: 
+        - R-programming
+        - Getting and cleaning data
+        - Exploratory data analysis
+        - Reproducible Research
+        - Statistical Inference
+        - Regression Models
+        - Practical Machine Learning
+        - Developing Data Products
+    - name: Premios
+      items:
+        - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
+        - Beca Doctorado, Agencia Nacional de Investigación y Desarrollo, Chile, 2014.
     - name: Educación
       items:
         - text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"

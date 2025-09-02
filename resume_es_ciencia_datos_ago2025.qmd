@@ -72,7 +72,7 @@ sidebar:
         - QGIS
         - SAGA
         - SNAP
-    - name: Datos satelitales
+    - name: Manejo de datos satelitales
       items:
         - MODIS
         - ERA5/ERA5-Land
@@ -81,6 +81,20 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
+    - name: Curso Especialización en Ciencia de Datos (Coursera)
+      items: 
+        - R-programming
+        - Getting and cleaning data
+        - Exploratory data analysis
+        - Reproducible Research
+        - Statistical Inference
+        - Regression Models
+        - Practical Machine Learning
+        - Developing Data Products
+    - name: Premios
+      items:
+        - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
+        - Beca Doctorado, Agencia Nacional de Investigación y Desarrollo, Chile, 2014.
     - name: Educación
       items:
         - text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"
@@ -148,7 +162,7 @@ Científico de datos con más de diez años de experiencia en el manejo y análi
 #| output: asis
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
-     "https://frzambra.shinyapps.io/pm25\\_app\n Desarrollador","PM 2.5", "2025","Modelé el material particulado 2.5 mensual para Chile continental, mediante algoritmos de Machine Learning, datos de la red SINCA (Sistema de Información Nacional de Calidad de Aire) y datos satelitales. Además, desarrollé el prototipo de una plataforma web para la visualización de los resultados.",
+     "https://frzambra.shinyapps.io/app\\_pm25/n Desarrollador","PM 2.5", "2025","Modelé el material particulado 2.5 mensual para Chile continental, mediante algoritmos de Machine Learning, datos de la red SINCA (Sistema de Información Nacional de Calidad de Aire) y satelitales. Además, desarrollé el prototipo de una plataforma web para la visualización de los resultados.",
     "https://s4tori.cl/app\n Director","SatOri", "2025","Dirigí y trabajé en el procesamiento de datos espaciales para el desarrollo del Sistema Satelital para la Optimización de Riego en frutales (SatOri). Modelé la variación espacial y temporal del potencial hídrico xilemático en cerezos, mediante el uso de datos satelitales Sentinel-2 y algorítmos de Machine Learning.",
     "https://odes-chile.org/app/unidades\n Director","ODES-Chile", "2022","Dirigí y trabajé en el procesamiento de datos espaciales para el observatorio de sequía para la agricultura y biodiversidad de Chile (ODES). Procesé los datos climáticos de ERA5-Land y calculé los indicadores de sequía para todo Chile continental. Generé la agregación espacial a diferentes unidades hidrológicas y administrativas.",
     "https://frzambra.shinyapps.io/iaf\\_shinyapp/\n Desarrollador","IAF app", "2021","Desarrollé una aplicación adaptada para teléfono que permite calcular el área de una hoja, como soporte al cálculo del Índice de Área Foliar (IAF).",
