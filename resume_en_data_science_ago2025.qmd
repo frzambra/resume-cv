@@ -15,53 +15,53 @@ sidebar:
   image: foto_perfil.jpeg
   bullets:
     - Providencia, Santiago, Chile
-    - Chileno-Italiano
+    - Chilean-Italian
   sections: 
-    - name: Habilidades
+    - name: Skills
       items:
         - text: R 
           exp: 
-            text: "10+ años"
+            text: "10+ yrs."
             num: .9
         - text: R | {tidyverse}
           exp: 
-            text: "3+ años"
+            text: "3+ yrs."
             num: .8
         - text: R | {tidymodels}
           exp: 
-            text: "1+ años"
+            text: "1+ yrs."
             num: .7
         - text: Python
           exp: 
-            text: "2 años"
+            text: "2 yrs."
             num: 0.3
         - text: Amazon Web Service (AWS|EC2)
           exp:
-            text: "3 años"
+            text: "3 yrs."
             num: 0.5
         - text: Dockers
           exp:
-            text: "2 años"
+            text: "2 yrs."
             num: 0.3
-        - text: SIG
+        - text: GIS
           exp: 
-            text: "10 años"
+            text: "10 yrs."
             num: 0.8
         - text: Rmarkdown
           exp: 
-            text: "6 años"
+            text: "6 yrs."
             num: 0.7
         - text: Quarto
           exp: 
-            text: "1 años"
+            text: "1 yrs."
             num: 0.6
-        - text: Análisis datos espaciales
+        - text: Spatial data analysis
           exp: 
-            text: "10 años"
+            text: "10 yrs."
             num: 0.8
         - text: R-Shiny
           exp: 
-            text: "6 años"
+            text: "6 yrs."
             num: 0.5
     - name: Software
       items:
@@ -72,7 +72,7 @@ sidebar:
         - QGIS
         - SAGA
         - SNAP
-    - name: Manejo de datos satelitales
+    - name: Spatial data
       items:
         - MODIS
         - ERA5/ERA5-Land
@@ -81,7 +81,7 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
-    - name: Curso Especialización en Ciencia de Datos (Coursera)
+    - name: Data Science
       items: 
         - R-programming
         - Getting and cleaning data
@@ -91,21 +91,21 @@ sidebar:
         - Regression Models
         - Practical Machine Learning
         - Developing Data Products
-    - name: Premios
+    - name: Awards
       items:
         - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
-        - Beca Doctorado, Agencia Nacional de Investigación y Desarrollo, Chile, 2014.
-    - name: Educación
+        - PhD Scholarship, National Agency for Research and Development, Chile, 2014.
+    - name: Education
       items:
-        - text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"
+        - text: "Ph.D in Agricultural Engineering, Mention in Water Resources"
           inst: "Universidad de Concepción"
           time: "03/2014 - 09/2017"
-          details: "Tesis: Sequía Agrícola en Chile. Desde la evaluación hacia la predicción usando datos satelitales"
-        - text: "Ingenieria Civil"
+          details: "Thesis: Agricultural Drought in Chile: From Assessment to Prediction Using Satellite Data"
+        - text: "Civil Engineering"
           inst: "Universidad de Concepción"
           time: "03/2000 - 09/2007"
           # details: "Thesis: Modularity Maximization"
-    - name: Contacto
+    - name: Contact
       items:
         - icon: map-marker
           text: Providencia, Santiago, Chile
@@ -151,64 +151,61 @@ cvproj <- function(tbl,what,role,items){
 }
 ```
 
-# Resumen
+# Summary
 
-Científico de datos con más de diez años de experiencia en el manejo y análisis de grandes volúmenes de datos. Especialista en machine learning, deep learning y análisis geoespacial aplicado a la toma de decisiones. Experiencia comprobada en desarrollo de modelos predictivos, visualización de datos y gestión de proyectos tecnológicos de alto impacto. He liderado proyectos de gran escala y publicado en revistas científicas de alto impacto, lo que respalda mi capacidad para generar conocimiento aplicado y resultados accionables.
+Spatial data scientist with over ten years of experience managing and analyzing large volumes of data. I specialize in machine learning, deep learning, and geospatial analysis applied to decision-making. I have proven experience developing predictive models, data visualization, and managing high-impact technology projects. I have led large-scale projects and published in high-impact scientific journals, which supports my ability to generate applied knowledge and actionable results.
 
-# Experiencia en Ciencia de Datos
+# Data Science Experience
 
 ```{r}
 #| label: experienceDS
 #| output: asis
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
-     "https://frzambra.shinyapps.io/app\\_pm25\n Desarrollador","PM 2.5", "2025","Modelé el material particulado 2.5 mensual para Chile continental, mediante algoritmos de Machine Learning, datos de la red SINCA (Sistema de Información Nacional de Calidad de Aire) y satelitales. Además, desarrollé el prototipo de una plataforma web para la visualización de los resultados.",
-    "https://s4tori.cl/app\n Director","SatOri", "2025","Dirigí y trabajé en el procesamiento de datos espaciales para el desarrollo del Sistema Satelital para la Optimización de Riego en frutales (SatOri). Modelé la variación espacial y temporal del potencial hídrico xilemático en cerezos, mediante el uso de datos satelitales Sentinel-2 y algorítmos de Machine Learning.",
-    "https://odes-chile.org/app/unidades\n Director","ODES-Chile", "2022","Dirigí y trabajé en el procesamiento de datos espaciales para el observatorio de sequía para la agricultura y biodiversidad de Chile (ODES). Procesé los datos climáticos de ERA5-Land y calculé los indicadores de sequía para todo Chile continental. Generé la agregación espacial a diferentes unidades hidrológicas y administrativas.",
-    "https://frzambra.shinyapps.io/iaf\\_shinyapp/\n Desarrollador","IAF app", "2021","Desarrollé una aplicación adaptada para teléfono que permite calcular el área de una hoja, como soporte al cálculo del Índice de Área Foliar (IAF).",
-    "https://frzambra.shinyapps.io/drought\\_prediction/\n Desarrollador","Predicción de sequía","2017","Desarrollé una aplicación web en la cuál implementé los resultados de mi artículo de investigación sobre la predicción de la sequía agrícola en Chile."
+     "https://frzambra.shinyapps.io/app\\_pm25\n Developer","PM 2.5", "2025","I modeled monthly particulate matter 2.5 for continental Chile using Machine Learning algorithms, data from the SINCA network (National Air Quality Information System), and satellite data. In addition, I developed a prototype of a web platform for visualizing the results.",
+    "https://s4tori.cl/app\n Director","SatOri", "2025","I led and worked on spatial data processing for the development of the Satellite System for Irrigation Optimization in fruit orchards (SatOri). I modeled the spatial and temporal variation of xylem water potential in cherry trees using Sentinel-2 satellite data and Machine Learning algorithms.",
+    "https://odes-chile.org/app/unidades\n Director","ODES-Chile", "2022","I led and worked on spatial data processing for the drought observatory for agriculture and biodiversity in Chile (ODES). I processed ERA5-Land climate data and calculated drought indicators for all continental Chile. I generated spatial aggregation across different hydrological and administrative units.",
+    "https://frzambra.shinyapps.io/iaf\\_shinyapp/\n Developer","IAF app", "2021","I developed a mobile-adapted application that allows calculating the area of a leaf, supporting the calculation of the Leaf Area Index (LAI).",
+    "https://frzambra.shinyapps.io/drought\\_prediction/\n Developer","Drought prediction","2017","I developed a web application in which I implemented the results of my research article on the prediction of agricultural drought in Chile."
    ) |> 
       cvevents(when = "dates", what = "title", where = "role", descr = "details")
 ```
 
 \newpage
 
-## Otras experiencias profesionales
+## Other professional experiences
 
 ```{r}
 #| label: experience
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
-    "Académico Asociado", "Centro de Observación de la Tierra\nHemera - Universidad Mayor", "02/2018 - 08/2025", "Me adjudiqué y dirigí proyectos financiados por ANID por mas de 600 millones, entre ellos un Fondecyt de Iniciación, un FONDEF IDeA y un fondo de sequía. Coordiné el desarrollo de las plataformas ODES-Chile y SatOri, enfocadas en la adaptación al cambio climático mediante observación de la tierra y análisis espacial. En el ámbito académico, impartí cursos de pregrado y postgrado en SIG (QGIS) y ciencia de datos espaciales con R, formando estudiantes en tecnologías aplicadas a la gestión ambiental y territorial.",
-    "Investigador Doctoral Visitante", "Facultad de Ciencias de Geoinformación y Observación de la Tierra (ITC)\n Universidad de Twente, Enschede, The Netherlands", "09/2016 - 12/2016", "Lideré un estudio para predecir la disminución de la productividad agrícola inducida por sequías en Chile, integrando series temporales de datos satelitales (MODIS, CHIRPS) y técnicas avanzadas de análisis espacial. Los resultados de esta investigación fueron publicados en el journal Remote Sensing of Environment.",
-     "Investigador Doctoral Visitante", "Centro de Tecnologías Avanzadas de Información para la Gestión de Tierras (CALMIT)\n Centro Nacional de Mitigación de Sequía (NDMC)\n Universidad de Nebraska, Lincoln, Nebraska, Estados Unidos", "01/2016 - 06/2016", "Lideré un estudio sobre la evaluación de productos satelitales para estimar la precipitación en Chile y su aplicabilidad en el monitoreo de sequías. Los resultados fueron publicados en el journal Atmospheric Research.",
-    "Investigador Asistente", "Centro Regional de Investigación Quilamapu \nInstituto Nacional de Investigaciones Agropecuarias (INIA)", "14/2012 - 03/2015", "Procesé y analicé datos de estaciones climáticas y satelitales para el estudio y monitoreo de la sequía en Chile. Además, automatice la generación de reportes mensuales sobre sequía y agroclima, incorporados en los informes agroclimáticos regionales.",
-    "Varios", "Servicios públicos\n CNR | DGA | INDAP","09/2007 - 12/2012", "He trabajado como ingeniero en servicios públicos como la Dirección General de Aguas (DGA), Comisión Nacional de Riego (CNR) e Instituto de Desarrollo Agropecuario (INDAP), en diferentes regiones de Chile, en temas relacionados con recursos hídricos, agricultura y organizaciones de usuarios de agua (OUAs)."
+    "Associate Professor", "Earth Observation Center\nHemera - Universidad Mayor", "02/2018 - 08/2025", "I secured and led ANID-funded projects for more than 600 million CLP, including an Initiation Fondecyt, a FONDEF IDeA, and a drought research fund. I coordinated the development of the ODES-Chile and SatOri platforms, focused on climate change adaptation through Earth observation and spatial analysis. In academia, I taught undergraduate and graduate courses on GIS (QGIS) and spatial data science with R, training students in technologies applied to environmental and territorial management.",
+    "Visiting Doctoral Researcher", "Faculty of Geo-Information Science and Earth Observation (ITC)\n University of Twente, Enschede, The Netherlands", "09/2016 - 12/2016", "I led a study to predict drought-induced declines in agricultural productivity in Chile, integrating time series of satellite data (MODIS, CHIRPS) and advanced spatial analysis techniques. The results of this research were published in the journal Remote Sensing of Environment.",
+    "Visiting Doctoral Researcher", "Center for Advanced Land Management Information Technologies (CALMIT)\n National Drought Mitigation Center (NDMC)\n University of Nebraska, Lincoln, Nebraska, United States", "01/2016 - 06/2016", "I led a study evaluating satellite products for estimating precipitation in Chile and their applicability in drought monitoring. The results were published in the journal Atmospheric Research.",
+    "Research Assistant", "Quilamapu Regional Research Center\nNational Institute for Agricultural Research (INIA)", "14/2012 - 03/2015", "I processed and analyzed climate station and satellite data for the study and monitoring of drought in Chile. In addition, I automated the generation of monthly drought and agroclimate reports, which were incorporated into regional agroclimatic bulletins.",
+    "Various", "Public Services\n CNR | DGA | INDAP","09/2007 - 12/2012", "I worked as an engineer in public services such as the General Water Directorate (DGA), the National Irrigation Commission (CNR), and the Agricultural Development Institute (INDAP), in different regions of Chile, on issues related to water resources, agriculture, and water user organizations (WUOs)."
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")
 ```
 
-# Proyectos concursables adjudicados
+# Awarded competitive projects
 
-Proyectos adjudicados por la Agencia Nacional de Investigación y Desarrollo (ANID) 
+Projects awarded by the National Research and Development Agency (ANID)
 
 ```{r}
 #| label: proj1
 #| output: asis
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
-    "Director", "Crea Ciencia 2030","01/2025 -10/2025", "Título: Impacto del cambio climático en fenología de paltos y el bosque nativo esclerófilo según acceso a agua subterránea potencial en la cuenca del río Aconcagua",
-    "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile un observatorio de sequía multiescalar para Chile, un sistema de alerta temprana para mitigar impactos agrícolas y ecológicos (https://odes-chile.org).",
-    "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri un sistema sateltal para la optimización de riego en cerezos (https://s4tori.cl).",
-    "Investigador principal", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirijí investigación en la que se evaluó la predicción de biomasa en trigo y maíz mediante el uso de datos satelitales y técnicas de machine learning",
-    "Investigador patrocinante", "Fondecyt Postdoctorado", "03/2023 - 03/2025", "Patrociné el proyecto titulado `Evaluación de la disponibilidad hídrica actual y futura para la agricultura y los ecosistemas terrestres bajo diferentes escenarios de uso del suelo en la cuenca del aconcagua: hacia la adaptación a la sequía.`",
-    "Co-investigador","Fondecyt Regular (1210526)", "03/2021 - 12/2024", "Título: Sistema multivariado de monitoreo de sequía: modelización biofísica, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura."
-    
-
+    "Director", "Crea Ciencia 2030","01/2025 -10/2025", "Title: Impact of climate change on the phenology of avocado trees and the native sclerophyll forest according to potential groundwater access in the Aconcagua River basin",
+    "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "We created ODES-Chile, a multiscale drought observatory for Chile, an early warning system to mitigate agricultural and ecological impacts (https://odes-chile.org).",
+    "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "We created SatOri, a satellite-based system for irrigation optimization in cherry orchards (https://s4tori.cl).",
+    "Principal Investigator", "Fondecyt Initiation 11190360","03/2020 - 03/2022", "I led research evaluating biomass prediction in wheat and corn using satellite data and machine learning techniques.",
+    "Sponsoring Researcher", "Fondecyt Postdoctoral", "03/2023 - 03/2025", "I sponsored the project entitled `Assessment of current and future water availability for agriculture and terrestrial ecosystems under different land use scenarios in the Aconcagua River basin: towards drought adaptation.`",
+    "Co-Investigator","Fondecyt Regular (1210526)", "03/2021 - 12/2024", "Title: Multivariate drought monitoring system: biophysical modeling, remote sensing, and hydroclimatic information for drought analysis and prediction in agriculture."
 ) |>
     cvevents(when = "dates", what = "title", where = "role", descr = "details")
-
 ```
 
 

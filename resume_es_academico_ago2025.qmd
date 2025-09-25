@@ -60,7 +60,7 @@ sidebar:
         - QGIS
         - SAGA
         - SNAP - ESA
-    - name: Manejo de datos satelitales
+    - name: Datos satelitales
       items:
         - MODIS
         - ERA5/ERA5-Land
@@ -69,7 +69,7 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
-    - name: Curso de espacialización en ciencia de datos (Coursera)
+    - name: Ciencia de datos
       items: 
         - R-programming
         - Getting and cleaning data
@@ -205,6 +205,10 @@ tibble::tribble(
 Desde el 2016 cuento con más de 500 citas, de las cuales el ~90% son de articulos publicados en calidad de primer autor o autor de correspondencia, con un  h-index de 7.
 
 <br><br>
+
+**Zambrano, F.**, Vrieling, A., Meza, Francisco, Duran-Llacer, Iongel, Fernández, Francisco, Venegas-González, Alejandro, Raab, Nicolas, Craven, Dylan. (2025). From Drought to Aridification: Land-cover fingerprints of a drying Chile. Earth's Future (segunda revisión).
+
+<br>
 
 **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. Agricultural Water Management, 318, 109721. https://doi.org/10.1016/j.agwat.2025.109721 
 
