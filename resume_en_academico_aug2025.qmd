@@ -60,7 +60,7 @@ sidebar:
         - QGIS
         - SAGA
         - SNAP - ESA
-    - name: Management of spatial data
+    - name: Spatial data
       items:
         - MODIS
         - ERA5/ERA5-Land
@@ -69,7 +69,7 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
-    - name: Data Science Specialization<br> (Coursera)
+    - name: Data Science
       items: 
         - R-programming
         - Getting and cleaning data
@@ -144,7 +144,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Summary
 
-Spatial data scientist and researcher with over ten years of experience. My work focuses on understanding climate variability, drought monitoring, and water resource management through remote sensing and geospatial and climate data analysis. I hold a PhD in agricultural engineering—which does not define me—and have published on vegetation dynamics, long-term droughts, land-use change, and water efficiency. My research seeks to contribute to both academic knowledge and practical decision-making to address the water crisis and strengthen climate resilience by integrating science, data, and public policy into sustainable solutions.
+Spatial data scientist and academic with over a decade of experience in climate monitoring and water resource management using remote sensing and geospatial analysis. My work focuses on understanding climate variability and droughts, with a focus on vegetation dynamics and water use efficiency. My goal is to apply data geoscience to generate knowledge and solutions that contribute to climate resilience and practical decision-making to address the water crisis.
 
 # Experience
 
@@ -160,6 +160,23 @@ tibble::tribble(
     "Other professional experiences", "Public services in Chile\n CNR | DGA | INDAP","09/2007 - 12/2012", "I have worked as an engineer in public services such as the General Directorate of Water (DGA), the National Irrigation Commission (CNR), and the Agricultural Development Institute (INDAP) in different regions of Chile on issues related to water resources, agriculture, and water user organizations (WOUs)."
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Teaching Experience
+
+```{r}
+#| label: teachingExperience
+#| output: asis
+#| escape: false
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Spatial Analysis with R. Lecturer. Graduate Program","Universidad Mayor", "2019-2023", "I trained students in theoretical concepts and the practical application of spatial interpolation methods using R software (\\href{https://francisco-zambrano.cl/curso_analisis-espacial-con-R/}{\\color{blue}{course link}}).",
+    "Advanced Use of Geographic Information Systems. Lecturer. Undergraduate Program", "Universidad Mayor", "2022-2025", "I taught theoretical and practical classes to train students in the use of R as a powerful Geographic Information Systems (GIS) tool. Topics covered included the management of vector and raster data, as well as the application of spatial operations for geospatial analysis (\\href{https://francisco-zambrano.cl/curso_SIG-con-R/}{\\color{blue}{course link}}).",
+    "Introduction to Geographic Information Systems. Lecturer. Undergraduate Program", "Universidad Mayor","2023-2025", "Instruction and training in Geographic Information Systems (GIS) using the open-source software QGIS. I designed and delivered practical workshops on key concepts such as: introduction to GIS, management of vector and raster data, coordinate reference systems, and spatial analysis (\\href{https://francisco-zambrano.cl/curso_intro-SIG/}{\\color{blue}{course link}}).",
+    "Data Mining. Lecturer. Undergraduate Program", "Universidad Mayor", "2021-2022","I trained students in processes of importing, organizing, and transforming data, using R software for data science (\\href{https://francisco-zambrano.cl/DTSE1017//}{\\color{blue}{course link}}).",
+    "Management of Geographic Information. Lecturer. Undergraduate Program","Universidad Mayor", "2019-2022","Instruction and training in Geographic Information Systems (GIS) using the open-source software QGIS. I designed and delivered practical workshops on key concepts such as: introduction to GIS, management of vector and raster data, coordinate reference systems, and spatial analysis.",
+    "Soil-Plant-Water Relationships. Lecturer. Undergraduate Program", "Universidad Mayor","2018","I introduced the fundamental concepts of the principles of soil-plant-atmosphere water relations and water transport in this system."
+    ) |>  cvevents(when = "dates", what = "role", where = "institution", descr = "details") 
 ```
 
 # Funded projects

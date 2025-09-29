@@ -1,7 +1,8 @@
 ---
 title: Untitled
 format:
-  modern2-cv-pdf: default
+  modern2-cv-pdf: 
+    include-in-header: preamble.tex
 author: |
   Francisco \linebreak
   Zambrano
@@ -98,8 +99,7 @@ sidebar:
         - Senderismo 
     - name: Educación
       items:
-        - icon: fa-graduation-cap
-          text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"
+        - text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"
           inst: "Universidad de Concepción"
           time: "03/2014 - 09/2017"
           details: "Tesis: Sequía Agrícola en Chile. Desde la evaluación hacia la predicción usando datos satelitales"
@@ -108,6 +108,11 @@ sidebar:
           time: "03/2000 - 09/2007"
           details: "Tesis: Efecto de la aplicacion diferencial de agua y fertilizante sobre la produccion y calidad de la vid cv. Carmennere"
           # details: "Thesis: Modularity Maximization"
+    - name: Idiomas
+      items:
+        - Ingles - Intermedio avanzado
+        - Italiano - Básico
+        - Español - Nativo
     - name: Contacto
       items:
         - icon: map-marker
@@ -158,14 +163,15 @@ cvproj <- function(tbl,what,role,items){
 
 Científico de datos espaciales y académico con más de una década de experiencia en el monitoreo del clima y la gestión de recursos hídricos mediante teledetección y análisis geoespacial. Mi trabajo se centra en comprender la variabilidad climática y las sequías, con un enfoque en la dinámica vegetacional y la eficiencia del uso del agua. Mi objetivo es aplicar la geociencia de datos para generar conocimiento y soluciones que contribuyan a la resiliencia climática y a la toma de decisiones prácticas para abordar la crisis hídrica.
 
-# Experiencia en Investigación
+
+# Experiencia
 
 ```{r}
 #| label: experience
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
-    "Académico Asociado", "Centro de Observación de la Tierra\nHemera - Universidad Mayor", "02/2018 - 08/2025", "Me adjudiqué y dirigí proyectos financiados por ANID por mas de 600 millones. Lideré el desarrollo de las plataformas \\href{https://odes-chile.org/}{\\color{blue}{ODES-Chile}} y \\href{https://s4tori.cl/}{\\color{blue}{SatOri}}, enfocadas en la adaptación al cambio climático mediante observación de la tierra y análisis espacial. ",
+    "Académico Asociado", "Centro de Observación de la Tierra\nHemera - Universidad Mayor", "02/2018 - 08/2025", "Me adjudiqué y dirigí proyectos financiados por ANID por mas de 600 millones, entre ellos un Fondecyt de Iniciación, un FONDEF IDeA y un fondo de sequía. Coordiné el desarrollo de las plataformas ODES-Chile y SatOri, enfocadas en la adaptación al cambio climático mediante observación de la tierra y análisis espacial. En el ámbito académico, impartí cursos de pregrado y postgrado en SIG (QGIS) y ciencia de datos espaciales con R, formando estudiantes en tecnologías aplicadas a la gestión ambiental y territorial.",
     "Investigador Doctoral Visitante", "Facultad de Ciencias de Geoinformación y Observación de la Tierra (ITC)\n Universidad de Twente, Enschede, The Netherlands", "09/2016 - 12/2016", "Lideré un estudio para predecir la disminución de la productividad agrícola inducida por sequías en Chile, integrando series temporales de datos satelitales (MODIS, CHIRPS) y técnicas avanzadas de análisis espacial. Los resultados de esta investigación fueron publicados en el journal Remote Sensing of Environment.",
      "Investigador Doctoral Visitante", "Centro de Tecnologías Avanzadas de Información para la Gestión de Tierras (CALMIT)\n Centro Nacional de Mitigación de Sequía (NDMC)\n Universidad de Nebraska, Lincoln, Nebraska, Estados Unidos", "01/2016 - 06/2016", "Lideré un estudio sobre la evaluación de productos satelitales para estimar la precipitación en Chile y su aplicabilidad en el monitoreo de sequías. Los resultados fueron publicados en el journal Atmospheric Research.",
     "Investigador Asistente", "Centro Regional de Investigación Quilamapu \nInstituto Nacional de Investigaciones Agropecuarias (INIA)", "14/2012 - 03/2015", "Procesé y analicé datos de estaciones climáticas y satelitales para el estudio y monitoreo de la sequía en Chile. Además, automatice la generación de reportes mensuales sobre sequía y agroclima, incorporados en los informes agroclimáticos regionales.",
@@ -203,12 +209,12 @@ He dirigido y/o participado en ocho proyectos adjudicados de la Agencia Nacional
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
     "Director", "Crea Ciencia 2030","01/2025 -10/2025", "Título: Impacto del cambio climático en fenología de paltos y el bosque nativo esclerófilo según acceso a agua subterránea potencial en la cuenca del río Aconcagua",
-    "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile un observatorio de sequía multiescalar para Chile, un sistema de alerta temprana para mitigar impactos agrícolas y ecológicos (\\href{https://odes-chile.org}{\\color{blue}{link}}).",
-    "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri un sistema sateltal para la optimización de riego en cerezos (\\href{https://s4tori.cl}{\\color{blue}{link}}).",
+    "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile un observatorio de sequía multiescalar para Chile, un sistema de alerta temprana para mitigar impactos agrícolas y ecológicos (https://odes-chile.org).",
+    "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri un sistema sateltal para la optimización de riego en cerezos (https://s4tori.cl).",
     "Investigador principal", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirijí investigación en la que se evaluó la predicción de biomasa en trigo y maíz mediante el uso de datos satelitales y técnicas de machine learning",
     "Investigador patrocinante", "Fondecyt Postdoctorado", "03/2023 - 03/2025", "Patrociné el proyecto titulado `Evaluación de la disponibilidad hídrica actual y futura para la agricultura y los ecosistemas terrestres bajo diferentes escenarios de uso del suelo en la cuenca del aconcagua: hacia la adaptación a la sequía.`",
-    "Co-investigador","Fondecyt Regular (1210526)", "03/2021 - 12/2024", "Título: Sistema multivariado de monitoreo de sequía: modelización biofísica, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura.",
-    "Co-investigador","Anillo (ACT210007)", "12/2021 - 05/2025","Título: Modelado de redes reguladoras de genes epigenéticos en yemas florales de cerezo en respuesta a condiciones climáticas estacionales diferenciales." 
+    "Co-investigador","Fondecyt Regular (1210526)", "03/2021 - 12/2024", "Título: Sistema multivariado de monitoreo de sequía: modelización biofísica, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura."
+    
 
 ) |>
     cvevents(when = "dates", what = "title", where = "role", descr = "details")
@@ -216,6 +222,8 @@ tibble::tribble(
 ```
 
 # Proyectos en evaluación
+
+El 2025 presenté tres proyectos que se encuentran en evaluación por la Agencia Nacional de Investigación y Desarrollo (ANID) 
 
 ```{r}
 #| label: proj2
@@ -230,96 +238,94 @@ tibble::tribble(
 
 ```
 
+### Publicaciones
+
+Desde el 2016 cuento con más de 500 citas, de las cuales el ~90% son de articulos publicados en calidad de primer autor o autor de correspondencia, con un  h-index de 7.
+
+<br><br>
+
+**Zambrano, F.**, Vrieling, A., Meza, Francisco, Duran-Llacer, Iongel, Fernández, Francisco, Venegas-González, Alejandro, Raab, Nicolas, Craven, Dylan. (2025). From Drought to Aridification: Land-cover fingerprints of a drying Chile. Earth's Future (segunda revisión).
+
+<br>
+
+**Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. Agricultural Water Management, 318, 109721. https://doi.org/10.1016/j.agwat.2025.109721 
+
+<br>
+
+Duran-Llacer, I., Salazar, A. A., Mondaca, P., Rodríguez-López, L., Martínez-Retureta, R., **Zambrano, F.**, Llanos, F., & Frappart, F. (2025). Influence of Avocado Plantations as Driver of Land Use and Land Cover Change in Chile’s Aconcagua Basin. Land, 14(4), 750. https://doi.org/10.3390/land14040750
+
+<br>
+
+**Zambrano, F.**, Vidal-Páez, P., & Hernández, B. (2024). Comparison of crop water demand derived from sen-ET for orchards within the Aconcagua’s river basin in Chile. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 3631-3634. https://doi.org/10.1109/IGARSS53475.2024.10642732
+
+<br>
+
+Fernández, F. J., Vásquez-Lavín, F., Ponce, R. D., Garreaud, R., Hernández, F., Link, O., **Zambrano, F.**, & Hanemann, M. (2023). The economics impacts of long-run droughts: Challenges, gaps, and way forward. Journal of Environmental Management, 344, 118726. https://doi.org/10.1016/j.jenvman.2023.118726
+
+<br>
+
+**Zambrano, F.** (2023). Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile. En R. M. Vijay P. Singh Deepak Jhajharia & R. Kumar (Eds.), Integrated Drought Management, Two Volume Set (p. 28). CRC Press.
+
+<br>
+
+Molina, J., González-Orenga, S., Vicente, O., Boscaiu, M., Llinares, J. V., **Zambrano, F.**, & Santibáñez, C. (2022). Effect of acetylsalicylic acid and ammonium sulphate on productive and physiological parameters in Stipa caudata under water shortage conditions. Notulae Botanicae Horti Agrobotanici Cluj-Napoca, 50(1), 12645. https://doi.org/10.15835/nbha50112645
+
+<br>
+
+Jopia, A., **Zambrano, F.**, Pérez-Martínez, W., Vidal-Páez, P., Molina, J., & Mardones, F. de la H. (2020). Time-series of vegetation indices (VNIR/SWIR) derived from sentinel-2 (A/B) to assess turgor pressure in Kiwifruit. ISPRS International Journal of Geo-Information, 9(11), 641. https://doi.org/10.3390/ijgi9110641
+
+<br>
+
+Rivas, Y., Rivera, D., Gallardo, R., Lagos, E., Yevenes, M., **Zambrano, F.**, & Mendoza, J. (2020). Water availability, quality, and use in rural communities of the Chilean Coastal Range. Journal of Soil and Water Conservation, 75(1), 75-90. https://doi.org/10.2489/jswc.75.1.75
 
 
-<!-- ### Publicaciones -->
+<br>
 
-<!-- Desde el 2016 cuento con más de 500 citas, de las cuales el ~90% son de articulos publicados en calidad de primer autor o autor de correspondencia, con un  h-index de 7. -->
+**Zambrano, F.**, Vrieling, A., Nelson, A., Meroni, M., & Tadesse, T. (2018). Prediction of agricultural drought in Chile from multiple spatio-temporal data sources. 2018, GC51H-0882. https://ui.adsabs.harvard.edu/abs/2018AGUFMGC51H0882Z
 
-<!-- <br><br> -->
+<br>
 
-<!-- **Zambrano, F.**, Vrieling, A., Meza, Francisco, Duran-Llacer, Iongel, Fernández, Francisco, Venegas-González, Alejandro, Raab, Nicolas, Craven, Dylan. (2025). From Drought to Aridification: Land-cover fingerprints of a drying Chile. Earth's Future (segunda revisión). -->
+**Zambrano, F.**, Wardlow, B., Tadesse, T., Lillo-Saavedra, M., & Lagos, O. (2017). Evaluating satellite-derived long-term historical precipitation datasets for drought monitoring in Chile. Atmospheric Research, 186, 26-42. https://doi.org/10.1016/j.atmosres.2016.11.006
 
-<!-- <br> -->
+<br>
 
-<!-- **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. Agricultural Water Management, 318, 109721. https://doi.org/10.1016/j.agwat.2025.109721  -->
+**Zambrano, F.**, Lillo-Saavedra, M., Verbist, K., & Lagos, O. (2016). Sixteen years of agricultural drought assessment of the BioBío region in Chile using a 250 m resolution vegetation condition index (VCI). Remote Sensing, 8(6), 1-20. https://doi.org/10.3390/rs8060530
 
-<!-- <br> -->
+## Conferencias
 
-<!-- Duran-Llacer, I., Salazar, A. A., Mondaca, P., Rodríguez-López, L., Martínez-Retureta, R., **Zambrano, F.**, Llanos, F., & Frappart, F. (2025). Influence of Avocado Plantations as Driver of Land Use and Land Cover Change in Chile’s Aconcagua Basin. Land, 14(4), 750. https://doi.org/10.3390/land14040750 -->
+He presentado en las conferencias más prestigiosas a nivel mundial en cuanto a observación de la tierra, tales como: American Geophysical Union (AGU), European Geosciences Union (EGU) y en el International Geoscience and Remote Sensing Symposium (IGARSS).
 
-<!-- <br> -->
+<br><br>
 
-<!-- **Zambrano, F.**, Vidal-Páez, P., & Hernández, B. (2024). Comparison of crop water demand derived from sen-ET for orchards within the Aconcagua’s river basin in Chile. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 3631-3634. https://doi.org/10.1109/IGARSS53475.2024.10642732 -->
+**Zambrano, F.**, Vidal-Páez, P., & Hernández, B. (2024). Comparison of crop water demand derived from sen-ET for orchards within the Aconcagua’s river basin in Chile. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 3631-3634. https://doi.org/10.1109/IGARSS53475.2024.10642732
 
-<!-- <br> -->
+<br>
 
-<!-- Fernández, F. J., Vásquez-Lavín, F., Ponce, R. D., Garreaud, R., Hernández, F., Link, O., **Zambrano, F.**, & Hanemann, M. (2023). The economics impacts of long-run droughts: Challenges, gaps, and way forward. Journal of Environmental Management, 344, 118726. https://doi.org/10.1016/j.jenvman.2023.118726 -->
+**Zambrano, F.**, & Duran-Llacer, I. (2024). Assessment of drought in continental Chile for 1981–2023 by climate variables of water supply and demand, soil moisture, and vegetation. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 2764-2768. https://doi.org/10.1109/IGARSS53475.2024.10641240
 
-<!-- <br> -->
+<br>
 
-<!-- **Zambrano, F.** (2023). Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile. En R. M. Vijay P. Singh Deepak Jhajharia & R. Kumar (Eds.), Integrated Drought Management, Two Volume Set (p. 28). CRC Press. -->
+Duran-Llacer, I., **Zambrano, F.**, Rodríguez-López, L., Martínez-Retureta, R., & Arumí, J. L. (2024). Analysis of Drought in Agriculture and Natural Vegetation Areas in Central Chile. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 3643-3646. https://doi.org/10.1109/IGARSS53475.2024.10642727
 
-<!-- <br> -->
+<br>
 
-<!-- Molina, J., González-Orenga, S., Vicente, O., Boscaiu, M., Llinares, J. V., **Zambrano, F.**, & Santibáñez, C. (2022). Effect of acetylsalicylic acid and ammonium sulphate on productive and physiological parameters in Stipa caudata under water shortage conditions. Notulae Botanicae Horti Agrobotanici Cluj-Napoca, 50(1), 12645. https://doi.org/10.15835/nbha50112645 -->
+**Zambrano, F.**, Vrieling, A., Meza, F., Duran-Llacer, I., Fernández, F., Venegas-González, A., Raab, N., & Craven, D. (2025). Shifts in water supply and demand shape land cover change across Chile. EGU General Assembly. https://doi.org/10.5194/egusphere-egu25-20588
 
-<!-- <br> -->
+<br>
 
-<!-- Jopia, A., **Zambrano, F.**, Pérez-Martínez, W., Vidal-Páez, P., Molina, J., & Mardones, F. de la H. (2020). Time-series of vegetation indices (VNIR/SWIR) derived from sentinel-2 (A/B) to assess turgor pressure in Kiwifruit. ISPRS International Journal of Geo-Information, 9(11), 641. https://doi.org/10.3390/ijgi9110641 -->
+**Zambrano, F.**, Meza, F., Raab, N., & Duran-Llacer, I. (2024, marzo 11). Drought’s trends over continental Chile using climatic variables of water demand and supply, soil moisture, and vegetation productivity. EGU General Assembly. https://doi.org/10.5194/egusphere-egu24-19099
 
-<!-- <br> -->
+<br>
 
-<!-- Rivas, Y., Rivera, D., Gallardo, R., Lagos, E., Yevenes, M., **Zambrano, F.**, & Mendoza, J. (2020). Water availability, quality, and use in rural communities of the Chilean Coastal Range. Journal of Soil and Water Conservation, 75(1), 75-90. https://doi.org/10.2489/jswc.75.1.75 -->
+Duran-Llacer, I., **Zambrano, F.**, Gómez-Escalonilla Canales, V., Martínez Santos, P., Aliagada Alvarado, M., Rodríguez-López, L., Martínez-Retureta, R., & Arumí, J. L. (2024). The response of Groundwater-Dependent Ecosystems to drought in central Chile. EGU General Assembly. https://doi.org/10.5194/egusphere-egu24-20738
 
+<br>
 
-<!-- <br> -->
+**Zambrano, F.**, Meza, F., & Raab, N. (2023). Water supply and demand drought indices to assess its impact over land cover change and vegetation development in continental Chile for 2000-2023 by ERA5-Land and MODIS datasets. 2023,  H43F-2151. AGU Fall Meeting Abstracts. https://ui.adsabs.harvard.edu/abs/2023AGUFM.H43F2151Z
 
-<!-- **Zambrano, F.**, Vrieling, A., Nelson, A., Meroni, M., & Tadesse, T. (2018). Prediction of agricultural drought in Chile from multiple spatio-temporal data sources. 2018, GC51H-0882. https://ui.adsabs.harvard.edu/abs/2018AGUFMGC51H0882Z -->
+<br>
 
-<!-- <br> -->
-
-<!-- **Zambrano, F.**, Wardlow, B., Tadesse, T., Lillo-Saavedra, M., & Lagos, O. (2017). Evaluating satellite-derived long-term historical precipitation datasets for drought monitoring in Chile. Atmospheric Research, 186, 26-42. https://doi.org/10.1016/j.atmosres.2016.11.006 -->
-
-<!-- <br> -->
-
-<!-- **Zambrano, F.**, Lillo-Saavedra, M., Verbist, K., & Lagos, O. (2016). Sixteen years of agricultural drought assessment of the BioBío region in Chile using a 250 m resolution vegetation condition index (VCI). Remote Sensing, 8(6), 1-20. https://doi.org/10.3390/rs8060530 -->
-
-<!-- ## Conferencias -->
-
-<!-- He presentado en las conferencias más prestigiosas a nivel mundial en cuanto a observación de la tierra, tales como: American Geophysical Union (AGU), European Geosciences Union (EGU) y en el International Geoscience and Remote Sensing Symposium (IGARSS). -->
-
-<!-- <br><br> -->
-
-<!-- **Zambrano, F.**, Vidal-Páez, P., & Hernández, B. (2024). Comparison of crop water demand derived from sen-ET for orchards within the Aconcagua’s river basin in Chile. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 3631-3634. https://doi.org/10.1109/IGARSS53475.2024.10642732 -->
-
-<!-- <br> -->
-
-<!-- **Zambrano, F.**, & Duran-Llacer, I. (2024). Assessment of drought in continental Chile for 1981–2023 by climate variables of water supply and demand, soil moisture, and vegetation. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 2764-2768. https://doi.org/10.1109/IGARSS53475.2024.10641240 -->
-
-<!-- <br> -->
-
-<!-- Duran-Llacer, I., **Zambrano, F.**, Rodríguez-López, L., Martínez-Retureta, R., & Arumí, J. L. (2024). Analysis of Drought in Agriculture and Natural Vegetation Areas in Central Chile. IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium, 3643-3646. https://doi.org/10.1109/IGARSS53475.2024.10642727 -->
-
-<!-- <br> -->
-
-<!-- **Zambrano, F.**, Vrieling, A., Meza, F., Duran-Llacer, I., Fernández, F., Venegas-González, A., Raab, N., & Craven, D. (2025). Shifts in water supply and demand shape land cover change across Chile. EGU General Assembly. https://doi.org/10.5194/egusphere-egu25-20588 -->
-
-<!-- <br> -->
-
-<!-- **Zambrano, F.**, Meza, F., Raab, N., & Duran-Llacer, I. (2024, marzo 11). Drought’s trends over continental Chile using climatic variables of water demand and supply, soil moisture, and vegetation productivity. EGU General Assembly. https://doi.org/10.5194/egusphere-egu24-19099 -->
-
-<!-- <br> -->
-
-<!-- Duran-Llacer, I., **Zambrano, F.**, Gómez-Escalonilla Canales, V., Martínez Santos, P., Aliagada Alvarado, M., Rodríguez-López, L., Martínez-Retureta, R., & Arumí, J. L. (2024). The response of Groundwater-Dependent Ecosystems to drought in central Chile. EGU General Assembly. https://doi.org/10.5194/egusphere-egu24-20738 -->
-
-<!-- <br> -->
-
-<!-- **Zambrano, F.**, Meza, F., & Raab, N. (2023). Water supply and demand drought indices to assess its impact over land cover change and vegetation development in continental Chile for 2000-2023 by ERA5-Land and MODIS datasets. 2023,  H43F-2151. AGU Fall Meeting Abstracts. https://ui.adsabs.harvard.edu/abs/2023AGUFM.H43F2151Z -->
-
-<!-- <br> -->
-
-<!-- Meza, F., Raab, N., & **Zambrano, F.** (2023). Multivariate Drought Index Combining Meteorological Information, Remote Sensing data and Biophysical Crop Simulation Models: Application in the Araucanía Region, Chile. 2023, H43F-2148. AGU Fall Meeting Abstracts. -->
+Meza, F., Raab, N., & **Zambrano, F.** (2023). Multivariate Drought Index Combining Meteorological Information, Remote Sensing data and Biophysical Crop Simulation Models: Application in the Araucanía Region, Chile. 2023, H43F-2148. AGU Fall Meeting Abstracts.
 
 
 

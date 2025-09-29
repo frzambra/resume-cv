@@ -1,7 +1,8 @@
 ---
 title: Untitled
 format:
-  modern2-cv-pdf: default
+  modern2-cv-pdf: 
+    include-in-header: preamble.tex
 author: |
   Francisco \linebreak
   Zambrano
@@ -157,6 +158,23 @@ tibble::tribble(
     "Otras experiencias profesionales", "Servicios públicos\n CNR | DGA | INDAP","09/2007 - 12/2012", "He trabajado como ingeniero en servicios públicos como la Dirección General de Aguas (DGA), Comisión Nacional de Riego (CNR) e Instituto de Desarrollo Agropecuario (INDAP), en diferentes regiones de Chile, en temas relacionados con recursos hídricos, agricultura y organizaciones de usuarios de agua (OUAs)."
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Experiencia Docente
+
+```{r}
+#| label: teachingExperience
+#| output: asis
+#| escape: false
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Análisis Espacial con R. Profesor de Catedra. Postgrado","Universidad Mayor", "2019-2023", "Forme estudiantes en conceptos teóricas y aplicación práctica de metodos de interpolación espacial, mediante el software R (\\href{https://francisco-zambrano.cl/curso_analisis-espacial-con-R/}{\\color{blue}{link al curso}}).",
+    "Uso Avanzado de Sistemas de Información Geográfica. Profesor de Catedra. Pregrado", "Universidad Mayor", "2022-2025", "Impartí clases teóricas y prácticas para capacitar a los estudiantes en el uso de R como una potente herramienta de Sistemas de Información Geográfica (SIG). Los temas cubiertos incluyeron el manejo de datos vectoriales y raster, así como la aplicación de operaciones espaciales para el análisis geoespacial (\\href{https://francisco-zambrano.cl/curso_SIG-con-R/}{\\color{blue}{link al curso}}).",
+    "Introducción a los Sistemas de Información Geográfica. Profesor de Catedra. Pregrado", "Universidad Mayor","2023-2025", "Instrucción y capacitación en Sistemas de Información Geográfica (SIG), utilizando el software de código abierto QGIS. Diseñé e impartí talleres prácticos sobre conceptos clave como: introducción a los SIG, manejo de datos vectoriales y raster, sistemas de referencia de coordenadas y análisis espacial (\\href{https://francisco-zambrano.cl/curso_intro-SIG/}{\\color{blue}{link al curso}}).",
+    "Minería de Datos. Profesor de Catedra. Pregrado", "Universidad Mayor", "2021-2022","Formé a estudiantes en procesos de importación, ordenamiento y transformación de datos, utilizando el software R para ciencia de datos.",
+    "Manejo de Información Geográfica. Profesor de Catedra Pregrado","Universidad Mayor", "2019-2022","Instrucción y capacitación en Sistemas de Información Geográfica (SIG), utilizando el software de código abierto QGIS. Diseñé e impartí talleres prácticos sobre conceptos clave como: introducción a los SIG, manejo de datos vectoriales y raster, sistemas de referencia de coordenadas y análisis espacial.",
+    "Relación Suelo-Planta-Agua. Profesor de Catedra. Pregrado", "Universidad Mayor","2018","Establecí los conceptos fundamentales de los principios de las relaciones hídricas suelo-planta-atmósfera y el transporte de agua en este sistema."
+    ) |>  cvevents(when = "dates", what = "role", where = "institution", descr = "details") 
 ```
 
 # Proyectos adjudicados
