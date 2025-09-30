@@ -1,7 +1,7 @@
 ---
 title: "Listado de Publicaciones"
 author: "Dr. Francisco Zambrano"
-date: "2025/09/29"
+date: "2025/09/30"
 format: pdf
 cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
 editor: visual

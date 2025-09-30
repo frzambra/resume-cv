@@ -88,7 +88,7 @@ sidebar:
         - Más de 114 revisiones de 28 publicaciones entre 2018-2025. En su mayoria artículos Q1.
     - name: Idiomas
       items:
-        - Ingles - Intermedio (B2)
+        - Ingles - Avanzado (B2-C1)
         - Italiano - Básico (A1)
         - Español - Nativo
     - name: Hobbies
