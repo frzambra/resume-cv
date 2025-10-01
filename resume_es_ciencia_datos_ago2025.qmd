@@ -71,8 +71,7 @@ sidebar:
         - Terminal 
         - QGIS
         - SAGA
-        - SNAP
-    - name: Manejo de datos satelitales
+    - name: Datos satelitales
       items:
         - MODIS
         - ERA5/ERA5-Land
@@ -81,7 +80,7 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
-    - name: Curso Especialización en Ciencia de Datos (Coursera)
+    - name: Ciencia de Datos
       items: 
         - R-programming
         - Getting and cleaning data
@@ -95,6 +94,16 @@ sidebar:
       items:
         - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
         - Beca Doctorado, Agencia Nacional de Investigación y Desarrollo, Chile, 2014.
+    - name: Hobbies
+      items: 
+        - MTB-Downhill
+        - Trotar
+        - Senderismo 
+    - name: Idiomas
+      items:
+        - Ingles - Avanzado (B2-C1)
+        - Italiano - Básico (A1)
+        - Español - Nativo
     - name: Educación
       items:
         - text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"
@@ -162,16 +171,14 @@ Científico de datos con más de diez años de experiencia en el manejo y análi
 #| output: asis
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
-     "https://frzambra.shinyapps.io/app\\_pm25\n Desarrollador","PM 2.5", "2025","Modelé el material particulado 2.5 mensual para Chile continental, mediante algoritmos de Machine Learning, datos de la red SINCA (Sistema de Información Nacional de Calidad de Aire) y satelitales. Además, desarrollé el prototipo de una plataforma web para la visualización de los resultados.",
-    "https://s4tori.cl/app\n Director","SatOri", "2025","Dirigí y trabajé en el procesamiento de datos espaciales para el desarrollo del Sistema Satelital para la Optimización de Riego en frutales (SatOri). Modelé la variación espacial y temporal del potencial hídrico xilemático en cerezos, mediante el uso de datos satelitales Sentinel-2 y algorítmos de Machine Learning.",
-    "https://odes-chile.org/app/unidades\n Director","ODES-Chile", "2022","Dirigí y trabajé en el procesamiento de datos espaciales para el observatorio de sequía para la agricultura y biodiversidad de Chile (ODES). Procesé los datos climáticos de ERA5-Land y calculé los indicadores de sequía para todo Chile continental. Generé la agregación espacial a diferentes unidades hidrológicas y administrativas.",
-    "https://frzambra.shinyapps.io/iaf\\_shinyapp/\n Desarrollador","IAF app", "2021","Desarrollé una aplicación adaptada para teléfono que permite calcular el área de una hoja, como soporte al cálculo del Índice de Área Foliar (IAF).",
-    "https://frzambra.shinyapps.io/drought\\_prediction/\n Desarrollador","Predicción de sequía","2017","Desarrollé una aplicación web en la cuál implementé los resultados de mi artículo de investigación sobre la predicción de la sequía agrícola en Chile."
+     "Desarrollador","PM 2.5", "2025","Modelé el material particulado 2.5 mensual para Chile continental, mediante algoritmos de Machine Learning, datos de la red SINCA (Sistema de Información Nacional de Calidad de Aire) y satelitales. Además, desarrollé el prototipo de una plataforma web para la visualización de los resultados (\\href{https://frzambra.shinyapps.io/app_pm25}{\\color{blue}{link app}}).",
+    "Director","SatOri", "2025","Dirigí y trabajé en el procesamiento de datos espaciales para el desarrollo del Sistema Satelital para la Optimización de Riego en frutales (SatOri). Modelé la variación espacial y temporal del potencial hídrico xilemático en cerezos, mediante el uso de datos satelitales Sentinel-2 y algorítmos de Machine Learning (\\href{https://s4tori.cl/app}{\\color{blue}{link app}}).",
+    "Director","ODES-Chile", "2022","Dirigí y trabajé en el procesamiento de datos espaciales para el observatorio de sequía para la agricultura y biodiversidad de Chile (ODES). Procesé los datos climáticos de ERA5-Land y calculé los indicadores de sequía para todo Chile continental. Generé la agregación espacial a diferentes unidades hidrológicas y administrativas (\\href{https://odes-chile.org/app/unidades}{\\color{blue}{link app}}).",
+    "Desarrollador","IAF app", "2021","Desarrollé una aplicación adaptada para teléfono que permite calcular el área de una hoja, como soporte al cálculo del Índice de Área Foliar (IAF) (\\href{https://frzambra.shinyapps.io/iaf_shinyapp/}{\\color{blue}{link app}}).",
+    "Desarrollador","Predicción de sequía","2017","Desarrollé una aplicación web en la cuál implementé los resultados de mi artículo de investigación sobre la predicción de la sequía agrícola en Chile (\\href{https://frzambra.shinyapps.io/drought_prediction/}{\\color{blue}{link app}})."
    ) |> 
       cvevents(when = "dates", what = "title", where = "role", descr = "details")
 ```
-
-\newpage
 
 ## Otras experiencias profesionales
 
@@ -201,7 +208,7 @@ tibble::tribble(
     "Director", "Crea Ciencia 2030","01/2025 -10/2025", "Título: Impacto del cambio climático en fenología de paltos y el bosque nativo esclerófilo según acceso a agua subterránea potencial en la cuenca del río Aconcagua",
     "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile un observatorio de sequía multiescalar para Chile, un sistema de alerta temprana para mitigar impactos agrícolas y ecológicos (https://odes-chile.org).",
     "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri un sistema sateltal para la optimización de riego en cerezos (https://s4tori.cl).",
-    "Investigador principal", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirijí investigación en la que se evaluó la predicción de biomasa en trigo y maíz mediante el uso de datos satelitales y técnicas de machine learning",
+    "Investigador principal", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirigí investigación en la que se evaluó la predicción de biomasa en trigo y maíz mediante el uso de datos satelitales y técnicas de machine learning",
     "Investigador patrocinante", "Fondecyt Postdoctorado", "03/2023 - 03/2025", "Patrociné el proyecto titulado `Evaluación de la disponibilidad hídrica actual y futura para la agricultura y los ecosistemas terrestres bajo diferentes escenarios de uso del suelo en la cuenca del aconcagua: hacia la adaptación a la sequía.`",
     "Co-investigador","Fondecyt Regular (1210526)", "03/2021 - 12/2024", "Título: Sistema multivariado de monitoreo de sequía: modelización biofísica, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura."
     

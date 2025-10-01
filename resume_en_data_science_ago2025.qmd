@@ -71,7 +71,6 @@ sidebar:
         - Terminal 
         - QGIS
         - SAGA
-        - SNAP
     - name: Spatial data
       items:
         - MODIS
@@ -95,6 +94,16 @@ sidebar:
       items:
         - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
         - PhD Scholarship, National Agency for Research and Development, Chile, 2014.
+    - name: Languages
+      items:
+        - English - Advanced (B2-C1)
+        - Italian - Basic (A1)
+        - Spanish - Native
+    - name: Hobbies
+      items: 
+        - MTB- Downhill
+        - Running
+        - Hiking 
     - name: Education
       items:
         - text: "Ph.D in Agricultural Engineering, Mention in Water Resources"
