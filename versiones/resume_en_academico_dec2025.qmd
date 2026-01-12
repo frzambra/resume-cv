@@ -1,0 +1,212 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: |
+  Francisco \linebreak
+  Zambrano
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+lang: es
+cvcolor: 
+  main: 0A084D
+  accent: 084D0B
+  jobtitle: 
+sidebar:
+  #image: foto_perfil.jpeg
+  bullets:
+    - Providencia, Santiago, Chile
+    - Chilean-Italian
+  sections: 
+    - name: Skills
+      items:
+        - text: R/Python/Matlab
+          exp: 
+            num: .9
+        - text: GIS/QGIS/SAGA/SNAP
+          exp: 
+            num: 0.8
+        - text: Rmarkdown/Quarto
+          exp: 
+            num: 0.7
+        - text: Spatial Data Analysis
+          exp: 
+            num: 0.8
+        - text: Web Development
+          exp: 
+            num: 0.6
+    - name: Software
+      items:
+        - Git
+        - RStudio - Positron
+        - VS Code
+        - Terminal 
+        - QGIS
+        - SAGA
+        - SNAP - ESA
+    - name: Spatial data
+      items:
+        - MODIS
+        - ERA5/ERA5-Land
+        - CHIRPS
+        - Sentinel-1/2/5p
+        - Landsat 7/8/9
+        - SoilGrid
+        - CMIP6
+    # - name: Data Science
+    #   items: 
+    #     - R-programming
+    #     - Getting and cleaning data
+    #     - Exploratory data analysis
+    #     - Reproducible Research
+    #     - Statistical Inference
+    #     - Regression Models
+    #     - Practical Machine Learning
+    #     - Developing Data Products
+    - name: Awards
+      items:
+        - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
+        - Doctorate Scholarship, National Research & Development Agency, Chile, 2014.
+    - name: Journals Reviewer
+      items:
+        - More than 114 reviews of 28 publications between 2018-2025. Mostly Q1 articles.
+    - name: Education
+      items:
+        - text: "PhD. in Agricultural Engineering, mention in Water Resources"
+          inst: "Universidad de Concepción"
+          time: "03/2014 - 09/2017"
+          details: "Thesis: Agricultural drought in Chile: from assessment to prediction using satellite data"
+        - text: "Agricultural Civil Engineer"
+          inst: "Universidad de Concepción"
+          time: "03/2000 - 09/2007"
+          details: "Thesis: Effect of differential application of water and fertilizer on the production and quality of the Carmenere grape variety"
+    - name: Languages
+      items:
+        - English - Advanced (B2-C1)
+        - Spanish - Native
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Providencia, Santiago, Chile
+        - icon: phone
+          text: "+56 9684 77864"
+        - icon: envelope
+          text: frzambra@gmail.com
+        - icon: home
+          text: francisco-zambrano.cl
+          href: https://francisco-zambrano.cl
+        - icon: orcid
+          text: 0000-0001-6896-8534
+          href: https://orcid.org/0000-0001-6896-8534
+        - icon: researchgate
+          text: Francisco-Zambrano
+          href: https://www.researchgate.net/profile/Francisco-Zambrano-5?ev=hdr_xprf
+        - icon: linkedin
+          text: frzambra
+          href: https://www.linkedin.com/in/frzambra
+        - icon: github
+          text: frzambra
+          href: https://github.com/frzambra
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+cvproj <- function(tbl,what,role,items){
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x)paste0(x,collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+```
+
+# Summary
+
+Spatial data scientist and drought researcher with >15 years of experience in remote sensing, hydroclimatic modeling, and agricultural adaptation to climate change. PI of competitive grants totaling >CLP 1,200 million (ANID Fondecyt, Anillos, FONDEF). Led the development of national platforms ODES-Chile (drought observatory) and SatOri (cherry irrigation optimization). Expertise in MODIS, Sentinel, CHIRPS, machine learning, and reproducible science with R/Python.
+
+# Projects
+
+The National Agency for Research and Development (ANID) has awarded me more than **CLP 1,200 MM** in funding.
+
+<br>
+
+```{r}
+#| label: proj1
+#| output: asis
+tibble::tribble(
+    ~role, ~title, ~dates, ~details,
+    "Principal Researcher, \\strong{CLP 212 MM}", "Fondecyt Regular 2026 (On evaluation)", "01/2026", "Title: From Drought to Resilience: A New Framework for Climate-Adaptive Agriculture Through Water-Efficient Crops and Landscape Optimization in Aridified Regions",
+    "Leading director, \\strong{CLP 660 MM}", "Anillos de Investigación en Áreas Temáticas 2025 (Funded)", "10/2025", "Title: Towards sustainable agricultural adaptation amid water scarcity and declining biodiversity in the Aconcagua Basin.", 
+    "Leading director, \\strong{CLP 300 MM}","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "We created ODES-Chile, a multi-scale drought observatory for Chile, an early warning system to mitigate agricultural and ecological impacts. (https://odes-chile.org).", 
+    "Leading director, \\strong{CLP 200 MM}","SatOri (ID21I10297)", "03/2022 - 12/2024", "We created SatOri, a satellite system for optimizing irrigation in cherry orchards (https://s4tori.cl).", 
+    "Principal researcher, \\strong{CLP 100 MM}", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "I led research that evaluated biomass prediction in wheat and corn using satellite data and machine learning techniques.",
+    "Universidad Mayor","Co-researcher projects", "2021-2025","- I sponsored the project \\strong{Fondecyt Postdoctorado} titled \\textit{Assessing Current and Future Water Availability for Agriculture and Terrestrial Ecosystems Under Different Land-Use Scenarios in the Aconcagua Basin: Toward Adaptation to Drought}. \\newline 
+    - I led the remote sensing part of the projects \\strong{Fondecyt Regular (1210526)} titled \\textit{Multivariate drought monitoring system: biophysical modeling, remote sensing, and hydroclimatic information for drought analysis and prediction in agriculture} and the \\strong{Anillo (ACT210007)} titled \\textit{Modeling regulatory networks of epigenetic genes in cherry flower buds in response to contrasting seasonal climatic conditions}."
+) |>
+    cvevents(when = "dates", what = "title", where = "role", descr = "details")
+
+```
+
+# Experience
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Associate Professor", "Earth Observation Center\nHemera - Universidad Mayor", "02/2018 - 08/2025", "I developed and taught multiple undergraduate and graduate courses in GIS (QGIS) and spatial data science (R), focusing on practical applications for environmental and territorial management. Key courses included Introduction to GIS (\\href{https://francisco-zambrano.cl/curso_intro-SIG/}{\\color{blue}{course link}}), Advanced Use of GIS with R (\\href{https://francisco-zambrano.cl/curso_SIG-con-R/}{\\color{blue}{course link}}), Spatial Analysis with R (\\href{https://francisco-zambrano.cl/curso_analisis-espacial-con-R/}{\\color{blue}{course link}}), and Data Mining (\\href{https://francisco-zambrano.cl/DTSE1017//}{\\color{blue}{course link}}), where I trained students in vector/raster data management, coordinate reference systems, spatial operations, interpolation methods, and reproducible analysis (with open course links).",
+    "Visiting Scholar", "Faculty of Geo-Information Science and Earth Observation (ITC)\n Univerity of Twente, The Netherlands", "09/2016 - 12/2016", "I led a study to predict drought-induced agricultural productivity declines in Chile, integrating time series satellite data (MODIS, CHIRPS) and advanced spatial analysis techniques. The results of this research were published in the journal Remote Sensing of Environment.",
+     "Visiting Scholar", "CALMIT/NDMC\n University of Nebraska, United States", "01/2016 - 06/2016", "I led a study on the evaluation of satellite products for estimating precipitation in Chile and their applicability for drought monitoring. The results were published in the journal Atmospheric Research."
+    # "Assistant Researcher", "Quilamapu Regional Research Center\nNational Institute of Agricultural Research (INIA)", "14/2012 - 03/2015", "I processed and analyzed data from weather stations and satellites for drought studies and monitoring in Chile. I also automated the generation of monthly drought and agroclimate reports, which are incorporated into the regional agroclimate reports.",
+    # "Other professional experiences", "Public services in Chile\n CNR | DGA | INDAP","09/2007 - 12/2012", "I have worked as an engineer in public services such as the General Directorate of Water (DGA), the National Irrigation Commission (CNR), and the Agricultural Development Institute (INDAP) in different regions of Chile on issues related to water resources, agriculture, and water user organizations (WOUs)."
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Teaching Experience
+
+```{r}
+#| label: teachingExperience
+#| output: asis
+#| escape: false
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Spatial Analysis with R. Lecturer. Graduate Program","Universidad Mayor", "2019-2023", "I trained students in theoretical concepts and the practical application of spatial interpolation methods using R software (\\href{https://francisco-zambrano.cl/curso_analisis-espacial-con-R/}{\\color{blue}{course link}}).",
+    "Advanced Use of Geographic Information Systems. Lecturer. Undergraduate Program", "Universidad Mayor", "2022-2025", "I taught theoretical and practical classes to train students in the use of R as a powerful Geographic Information Systems (GIS) tool. Topics covered included the management of vector and raster data, as well as the application of spatial operations for geospatial analysis (\\href{https://francisco-zambrano.cl/curso_SIG-con-R/}{\\color{blue}{course link}}).",
+    "Introduction to Geographic Information Systems. Lecturer. Undergraduate Program", "Universidad Mayor","2023-2025", "Instruction and training in Geographic Information Systems (GIS) using the open-source software QGIS. I designed and delivered practical workshops on key concepts such as: introduction to GIS, management of vector and raster data, coordinate reference systems, and spatial analysis (\\href{https://francisco-zambrano.cl/curso_intro-SIG/}{\\color{blue}{course link}}).",
+    "Data Mining. Lecturer. Undergraduate Program", "Universidad Mayor", "2021-2022","I trained students in processes of importing, organizing, and transforming data, using R software for data science (\\href{https://francisco-zambrano.cl/DTSE1017//}{\\color{blue}{course link}}).",
+    "Management of Geographic Information. Lecturer. Undergraduate Program","Universidad Mayor", "2019-2022","Instruction and training in Geographic Information Systems (GIS) using the open-source software QGIS. I designed and delivered practical workshops on key concepts such as: introduction to GIS, management of vector and raster data, coordinate reference systems, and spatial analysis.",
+    "Soil-Plant-Water Relationships. Lecturer. Undergraduate Program", "Universidad Mayor","2018","I introduced the fundamental concepts of the principles of soil-plant-atmosphere water relations and water transport in this system."
+    ) |>  cvevents(when = "dates", what = "role", where = "institution", descr = "details") 
+```
+
+
+# Selected Publications
+
+1.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. **Earth’s Future (F.I. 8.2)**. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
+
+2. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. **Agricultural Water Management (F.I. 6.5)**, 318, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
+
+3. **Zambrano, F.**, 2023. Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile, in: Vijay P. Singh Deepak Jhajharia, R.M., Kumar, R. (Eds.), Integrated Drought Management, Two Volume Set. CRC Press, p. 28.
+
+4. **Zambrano, F.**, Vrieling, A., Nelson, A., Meroni, M., Tadesse, T., 2018. Prediction of drought-induced reduction of agricultural productivity in Chile from MODIS, rainfall estimates, and climate oscillation indices. **Remote Sensing of Environment (F.I. 11.4)** 219, 15–30. [https://doi.org/10.1016/j.rse.2018.10.006](https://doi.org/10.1016/j.rse.2018.10.006)
+
+5. **Zambrano, F.**, Wardlow, B., Tadesse, T., Lillo-Saavedra, M., Lagos, O., 2017. Evaluating satellite-derived long-term historical precipitation datasets for drought monitoring in Chile. **Atmospheric Research (F.I. 4.4)** 186, 26–42. [https://doi.org/10.1016/j.atmosres.2016.11.006](https://doi.org/10.1016/j.atmosres.2016.11.006)

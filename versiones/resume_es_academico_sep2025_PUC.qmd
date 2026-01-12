@@ -99,7 +99,7 @@ sidebar:
     - name: Educación
       items:
         - icon: fa-graduation-cap
-          text: "Dr.Ingenieria Agrícola mención Recursos Hídricos"
+          text: "Dr.Ingeniería Agrícola mención Recursos Hídricos"
           inst: "Universidad de Concepción"
           time: "03/2014 - 09/2017"
           details: "Tesis: Sequía Agrícola en Chile. Desde la evaluación hacia la predicción usando datos satelitales"
@@ -165,30 +165,13 @@ Científico de datos espaciales y académico con más de una década de experien
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
-    "Académico Asociado", "Centro de Observación de la Tierra\nHemera - Universidad Mayor", "02/2018 - 08/2025", "Me adjudiqué y dirigí proyectos financiados por ANID por mas de 600 millones. Lideré el desarrollo de las plataformas \\href{https://odes-chile.org/}{\\color{blue}{ODES-Chile}} y \\href{https://s4tori.cl/}{\\color{blue}{SatOri}}, enfocadas en la adaptación al cambio climático mediante observación de la tierra y análisis espacial. ",
+    "Académico Asociado", "Centro de Observación de la Tierra\nHemera - Universidad Mayor", "02/2018 - 08/2025", "Me adjudiqué y dirigí proyectos financiados por ANID por más de 600 millones. Lideré el desarrollo de las plataformas \\href{https://odes-chile.org/}{\\color{blue}{ODES-Chile}} y \\href{https://s4tori.cl/}{\\color{blue}{SatOri}}, enfocadas en la adaptación al cambio climático mediante observación de la tierra y análisis espacial. ",
     "Investigador Doctoral Visitante", "Facultad de Ciencias de Geoinformación y Observación de la Tierra (ITC)\n Universidad de Twente, Enschede, The Netherlands", "09/2016 - 12/2016", "Lideré un estudio para predecir la disminución de la productividad agrícola inducida por sequías en Chile, integrando series temporales de datos satelitales (MODIS, CHIRPS) y técnicas avanzadas de análisis espacial. Los resultados de esta investigación fueron publicados en el journal Remote Sensing of Environment.",
      "Investigador Doctoral Visitante", "Centro de Tecnologías Avanzadas de Información para la Gestión de Tierras (CALMIT)\n Centro Nacional de Mitigación de Sequía (NDMC)\n Universidad de Nebraska, Lincoln, Nebraska, Estados Unidos", "01/2016 - 06/2016", "Lideré un estudio sobre la evaluación de productos satelitales para estimar la precipitación en Chile y su aplicabilidad en el monitoreo de sequías. Los resultados fueron publicados en el journal Atmospheric Research.",
     "Investigador Asistente", "Centro Regional de Investigación Quilamapu \nInstituto Nacional de Investigaciones Agropecuarias (INIA)", "14/2012 - 03/2015", "Procesé y analicé datos de estaciones climáticas y satelitales para el estudio y monitoreo de la sequía en Chile. Además, automatice la generación de reportes mensuales sobre sequía y agroclima, incorporados en los informes agroclimáticos regionales.",
     "Otras experiencias profesionales", "Servicios públicos\n CNR | DGA | INDAP","09/2007 - 12/2012", "He trabajado como ingeniero en servicios públicos como la Dirección General de Aguas (DGA), Comisión Nacional de Riego (CNR) e Instituto de Desarrollo Agropecuario (INDAP), en diferentes regiones de Chile, en temas relacionados con recursos hídricos, agricultura y organizaciones de usuarios de agua (OUAs)."
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")
-```
-
-# Experiencia Docente
-
-```{r}
-#| label: teachingExperience
-#| output: asis
-#| escape: false
-tibble::tribble(
-    ~role, ~institution, ~dates, ~details,
-    "Análisis Espacial con R. Profesor de Catedra. Postgrado","Universidad Mayor", "2019-2023", "Forme estudiantes en conceptos teóricas y aplicación práctica de metodos de interpolación espacial, mediante el software R (\\href{https://francisco-zambrano.cl/curso_analisis-espacial-con-R/}{\\color{blue}{link al curso}}).",
-    "Uso Avanzado de Sistemas de Información Geográfica. Profesor de Catedra. Pregrado", "Universidad Mayor", "2022-2025", "Impartí clases teóricas y prácticas para capacitar a los estudiantes en el uso de R como una potente herramienta de Sistemas de Información Geográfica (SIG). Los temas cubiertos incluyeron el manejo de datos vectoriales y raster, así como la aplicación de operaciones espaciales para el análisis geoespacial (\\href{https://francisco-zambrano.cl/curso_SIG-con-R/}{\\color{blue}{link al curso}}).",
-    "Introducción a los Sistemas de Información Geográfica. Profesor de Catedra. Pregrado", "Universidad Mayor","2023-2025", "Instrucción y capacitación en Sistemas de Información Geográfica (SIG), utilizando el software de código abierto QGIS. Diseñé e impartí talleres prácticos sobre conceptos clave como: introducción a los SIG, manejo de datos vectoriales y raster, sistemas de referencia de coordenadas y análisis espacial (\\href{https://francisco-zambrano.cl/curso_intro-SIG/}{\\color{blue}{link al curso}}).",
-    "Minería de Datos. Profesor de Catedra. Pregrado", "Universidad Mayor", "2021-2022","Formé a estudiantes en procesos de importación, ordenamiento y transformación de datos, utilizando el software R para ciencia de datos (\\href{https://francisco-zambrano.cl/DTSE1017//}{\\color{blue}{link al curso}}).",
-    "Manejo de Información Geográfica. Profesor de Catedra Pregrado","Universidad Mayor", "2019-2022","Instrucción y capacitación en Sistemas de Información Geográfica (SIG), utilizando el software de código abierto QGIS. Diseñé e impartí talleres prácticos sobre conceptos clave como: introducción a los SIG, manejo de datos vectoriales y raster, sistemas de referencia de coordenadas y análisis espacial.",
-    "Relación Suelo-Planta-Agua. Profesor de Catedra. Pregrado", "Universidad Mayor","2018","Establecí los conceptos fundamentales de los principios de las relaciones hídricas suelo-planta-atmósfera y el transporte de agua en este sistema."
-    ) |>  cvevents(when = "dates", what = "role", where = "institution", descr = "details") 
 ```
 
 # Proyectos adjudicados
@@ -202,10 +185,11 @@ He dirigido y/o participado en ocho proyectos adjudicados de la Agencia Nacional
 #| output: asis
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
+    "Director", "Anillos de Investigación en Áreas Temáticas 2025", "10/2025", "Título: Hacia una adaptación agrícola sustentable en medio de la escasez de agua y la disminución de la biodiversidad en la cuenca del Aconcagua (No ejecutado por desvinculación).",
     "Director", "Crea Ciencia 2030","01/2025 -10/2025", "Título: Impacto del cambio climático en fenología de paltos y el bosque nativo esclerófilo según acceso a agua subterránea potencial en la cuenca del río Aconcagua",
-    "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile un observatorio de sequía multiescalar para Chile, un sistema de alerta temprana para mitigar impactos agrícolas y ecológicos (\\href{https://odes-chile.org}{\\color{blue}{link}}).",
-    "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri un sistema sateltal para la optimización de riego en cerezos (\\href{https://s4tori.cl}{\\color{blue}{link}}).",
-    "Investigador principal", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirijí investigación en la que se evaluó la predicción de biomasa en trigo y maíz mediante el uso de datos satelitales y técnicas de machine learning",
+    "Director","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile un observatorio de sequía multiescalar para Chile, un sistema de alerta temprana para mitigar impactos agrícolas y ecológicos (\\href{https://odes-chile.org}{\\color{blue}{link}}). Financiamiento: 300 millones",
+    "Director","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri un sistema satelital para la optimización de riego en cerezos (\\href{https://s4tori.cl}{\\color{blue}{link}}). Financiamiento: 200 millones.",
+    "Investigador principal", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirigí investigación en la que se evaluó la predicción de biomasa en trigo y maíz mediante el uso de datos satelitales y técnicas de machine learning. Financiamiento: 100 millones",
     "Investigador patrocinante", "Fondecyt Postdoctorado", "03/2023 - 03/2025", "Patrociné el proyecto titulado `Evaluación de la disponibilidad hídrica actual y futura para la agricultura y los ecosistemas terrestres bajo diferentes escenarios de uso del suelo en la cuenca del aconcagua: hacia la adaptación a la sequía.`",
     "Co-investigador","Fondecyt Regular (1210526)", "03/2021 - 12/2024", "Título: Sistema multivariado de monitoreo de sequía: modelización biofísica, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura.",
     "Co-investigador","Anillo (ACT210007)", "12/2021 - 05/2025","Título: Modelado de redes reguladoras de genes epigenéticos en yemas florales de cerezo en respuesta a condiciones climáticas estacionales diferenciales." 
@@ -223,14 +207,28 @@ tibble::tribble(
 tibble::tribble(
     ~role, ~title, ~dates, ~details,
     "Investigador Principal", "Fondecyt Regular 2026", "01/2026", "Título: De la sequía a la resiliencia: Un nuevo marco para la agricultura adaptativa al clima mediante cultivos que hacen un uso eficiente del agua y la optimización del paisaje en regiones aridificadas",
-    "Director", "Fondef Tecnologías Avanzadas 2025","08/2025", "Título: ODES-Adapta: plataforma de información para la adaptación de la agricultura al cambio climático en la cuenca del río Aconcagua",
-    "Director", "Anillos de Investigación en Áreas Temáticas 2025", "10/2025", "Título: Hacia una adaptación agrícola sustentable en medio de la escasez de agua y la disminución de la biodiversidad en la cuenca del Aconcagua."
+    "Director", "Fondef Tecnologías Avanzadas 2025","08/2025", "Título: ODES-Adapta: plataforma de información para la adaptación de la agricultura al cambio climático en la cuenca del río Aconcagua"
 ) |>
     cvevents(what = "title", when = "dates", where = "role", descr = "details")
 
 ```
 
+# Experiencia Docente
 
+```{r}
+#| label: teachingExperience
+#| output: asis
+#| escape: false
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Análisis Espacial con R. Profesor de Cátedra. Postgrado","Universidad Mayor", "2019-2023", "Forme estudiantes en conceptos teóricas y aplicación práctica de métodos de interpolación espacial, mediante el software R (\\href{https://francisco-zambrano.cl/curso_analisis-espacial-con-R/}{\\color{blue}{link al curso}}).",
+    "Uso Avanzado de Sistemas de Información Geográfica. Profesor de Cátedra. Pregrado", "Universidad Mayor", "2022-2025", "Impartí clases teóricas y prácticas para capacitar a los estudiantes en el uso de R como una potente herramienta de Sistemas de Información Geográfica (SIG). Los temas cubiertos incluyeron el manejo de datos vectoriales y raster, así como la aplicación de operaciones espaciales para el análisis geoespacial (\\href{https://francisco-zambrano.cl/curso_SIG-con-R/}{\\color{blue}{link al curso}}).",
+    "Introducción a los Sistemas de Información Geográfica. Profesor de Cátedra. Pregrado", "Universidad Mayor","2023-2025", "Instrucción y capacitación en Sistemas de Información Geográfica (SIG), utilizando el software de código abierto QGIS. Diseñé e impartí talleres prácticos sobre conceptos clave como: introducción a los SIG, manejo de datos vectoriales y raster, sistemas de referencia de coordenadas y análisis espacial (\\href{https://francisco-zambrano.cl/curso_intro-SIG/}{\\color{blue}{link al curso}}).",
+    "Minería de Datos. Profesor de Cátedra. Pregrado", "Universidad Mayor", "2021-2022","Formé a estudiantes en procesos de importación, ordenamiento y transformación de datos, utilizando el software R para ciencia de datos (\\href{https://francisco-zambrano.cl/DTSE1017//}{\\color{blue}{link al curso}}).",
+    "Manejo de Información Geográfica. Profesor de Cátedra Pregrado","Universidad Mayor", "2019-2022","Instrucción y capacitación en Sistemas de Información Geográfica (SIG), utilizando el software de código abierto QGIS. Diseñé e impartí talleres prácticos sobre conceptos clave como: introducción a los SIG, manejo de datos vectoriales y raster, sistemas de referencia de coordenadas y análisis espacial.",
+    "Relación Suelo-Planta-Agua. Profesor de Cátedra. Pregrado", "Universidad Mayor","2018","Establecí los conceptos fundamentales de los principios de las relaciones hídricas suelo-planta-atmósfera y el transporte de agua en este sistema."
+    ) |>  cvevents(when = "dates", what = "role", where = "institution", descr = "details") 
+```
 
 <!-- ### Publicaciones -->
 
