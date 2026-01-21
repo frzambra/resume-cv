@@ -3,6 +3,7 @@ title: Untitled
 format:
   modern2-cv-pdf: 
     include-in-header: preamble.tex
+    pdf-engine: lualatex
 author: |
   Francisco \linebreak
   Zambrano
@@ -24,6 +25,10 @@ sidebar:
           exp: 
             text: "10+ años"
             num: .9
+        - text: Machine Learning
+          exp:
+            text: "10+ años"
+            num: .8
         - text: SIG (QGIS/SAGA/SNAP)
           exp: 
             text: "10 años"
@@ -101,17 +106,20 @@ sidebar:
         - icon: home
           text: francisco-zambrano.cl
           href: https://francisco-zambrano.cl
+        - icon: graduation-cap
+          text: Google Scholar
+          href: https://scholar.google.com/citations?user=mKQRdOEAAAAJ&hl=es
         - icon: orcid
           text: 0000-0001-6896-8534
           href: https://orcid.org/0000-0001-6896-8534
         - icon: researchgate
-          text: Francisco-Zambrano
+          text: Researchgate
           href: https://www.researchgate.net/profile/Francisco-Zambrano-5?ev=hdr_xprf
         - icon: linkedin
-          text: frzambra
+          text: LinkedIn
           href: https://www.linkedin.com/in/frzambra
         - icon: github
-          text: frzambra
+          text: Github
           href: https://github.com/frzambra
 execute: 
   echo: false
@@ -147,7 +155,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Resumen
 
-Científico de datos e investigador con más de 15 años de experiencia en análisis avanzado de datos, modelación predictiva y ciencia de datos aplicada, con foco en sustentabilidad, gestión de recursos naturales y toma de decisiones basada en evidencia. Ha liderado proyectos de alto impacto con financiamiento competitivo (FONDECYT, Anillo, FONDEF), desarrollando herramientas de analítica avanzada e inteligencia de negocios para el monitoreo de sistemas socioambientales y la optimización de sistemas productivos. Cuenta con sólida experiencia en R y Python, aprendizaje automático, visualización de datos y ciencia reproducible, con capacidad de transferir estas metodologías a contextos de economía aplicada, políticas públicas y gestión estratégica.
+Científico de datos e investigador con más de 15 años de experiencia en análisis avanzado de datos y remote sensing aplicados a agricultura, clima y recursos hídricos. Investigador responsable de proyectos ANID (FONDECYT, FONDEF), con especialización en modelación predictiva, machine learning y análisis espacio-temporal para monitoreo ambiental y toma de decisiones basada en evidencia. Amplio dominio de R y Python, visualización de datos y desarrollo de soluciones analíticas transferibles a políticas públicas y sistemas productivos.
 
 # Proyectos
 
@@ -208,14 +216,18 @@ tibble::tribble(
 ```
 
 
-# Publicaciones Seleccionadas
+# Últimas Publicaciones 
 
-1.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. **Earth’s Future (F.I. 8.2)**. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
+1. **Zambrano, F.**, Herrea, A., Molina-Roco, M. Explainable Machine Learning for Wheat Biomass Integrating Sentinel-1/2, PlanetScope and In-Situ Weather Data. 2026. **Remote Sensing Applications: Society and Environment (F.I. 4.5).** (Under review). [https://doi.org/10.31223/X5KJ1K](https://doi.org/10.31223/X5KJ1K)
 
-2. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. **Agricultural Water Management (F.I. 6.5)**, 318, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
+2.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. **Earth’s Future (F.I. 8.2)**. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
 
-3. **Zambrano, F.**, 2023. Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile, in: Vijay P. Singh Deepak Jhajharia, R.M., Kumar, R. (Eds.), Integrated Drought Management, Two Volume Set. CRC Press, p. 28.
+3. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. **Agricultural Water Management (F.I. 6.5)**, 318, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
 
-4. **Zambrano, F.**, Vrieling, A., Nelson, A., Meroni, M., Tadesse, T., 2018. Prediction of drought-induced reduction of agricultural productivity in Chile from MODIS, rainfall estimates, and climate oscillation indices. **Remote Sensing of Environment (F.I. 11.4)** 219, 15–30. [https://doi.org/10.1016/j.rse.2018.10.006](https://doi.org/10.1016/j.rse.2018.10.006)
+4. Duran-Llacer, I., Gómez-Escalonilla Canales, V., Aliaga-Alvarado, M., Arumí, J.L., **Zambrano, F.**, Rodríguez-López, L., Martínez-Retureta, R., Martínez-Santos, P., 2025. Approach to mapping groundwater-dependent ecosystems through machine learning in central Chile. **Groundwater for Sustainable Development (F.I. 5.6)** 31, 101526. [https://doi.org/10.1016/j.gsd.2025.101526](https://doi.org/10.1016/j.gsd.2025.101526)
 
-5. **Zambrano, F.**, Wardlow, B., Tadesse, T., Lillo-Saavedra, M., Lagos, O., 2017. Evaluating satellite-derived long-term historical precipitation datasets for drought monitoring in Chile. **Atmospheric Research (F.I. 4.4)** 186, 26–42. [https://doi.org/10.1016/j.atmosres.2016.11.006](https://doi.org/10.1016/j.atmosres.2016.11.006)
+5. Duran-Llacer, I., Salazar, A. A., Mondaca, P., Rodríguez-López, L., Martínez-Retureta, R., **Zambrano, F.**, Llanos, F., & Frappart, F. (2025). Influence of Avocado Plantations as Driver of Land Use and Land Cover Change in Chile’s Aconcagua Basin. **Land (F.I. 3.2)**, 14(4), 750. [https://doi.org/10.3390/land14040750](https://doi.org/10.3390/land14040750)
+
+6. **Zambrano, F.**, 2023. Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile, in: Vijay P. Singh Deepak Jhajharia, R.M., Kumar, R. (Eds.), Integrated Drought Management, Two Volume Set. CRC Press, p. 28.
+
+7.  Fernández, F. J., Vásquez-Lavín, F., Ponce, R. D., Garreaud, R., Hernández, F., Link, O., **Zambrano, F.**, & Hanemann, M. (2023). The economics impacts of long-run droughts: Challenges, gaps, and way forward. **Journal of Environmental Management (F.I. 8.4)**, 344, 118726. [https://doi.org/10.1016/j.jenvman.2023.118726](https://doi.org/10.1016/j.jenvman.2023.118726)

@@ -15,7 +15,7 @@ sidebar:
   #image: foto_perfil.jpeg
   bullets:
     - Providencia, Santiago, Chile
-    - Chilean-Italian
+    - Chileno-Italiano
   sections: 
     - name: Habilidades
       items:
@@ -26,6 +26,10 @@ sidebar:
         - text: ML/DL (Python/R)
           exp:
             text: "5+ años"
+            num: .6
+        - text: MySQL / PostgreSQL
+          exp:
+            text: "5+ yrs."
             num: .6
         - text: CI/CD
           exp: 
@@ -51,14 +55,18 @@ sidebar:
           exp: 
             text: "5 yrs."
             num: 0.6
-    - name: Software
+    - name: Python libraries
       items:
-        - Git
-        - RStudio - Positron
-        - VS Code
-        - Terminal 
-        - QGIS
-        - SAGA
+        - NumPy, Pandas, Matplotlib
+        - GeoPandas, rasterio, xarray, rioxarray, fiona
+        - scikit-learn, PyTorch
+        - streamlit
+    - name: R packages
+      items:
+        - tidyverse
+        - terra,sf,tmap
+        - tidymodels
+        - shiny
     - name: Datos espaciales
       items:
         - MODIS
@@ -68,10 +76,10 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
-    - name: Premios
-      items:
-        - Ganador Hackaton en la OpenGeoHub Summer School, Siegburg, Germany, 2022.
-        - Beca Doctorado, Agencia Nacional de Investigación y Desarrollo (ANID), Chile, 2014.
+    # - name: Premios
+    #   items:
+    #     - Ganador Hackaton en la OpenGeoHub Summer School, Siegburg, Germany, 2022.
+    #     - Beca Doctorado, Agencia Nacional de Investigación y Desarrollo (ANID), Chile, 2014.
     - name: Idiomas
       items:
         - Ingles - Avanzado (B2-C1)
@@ -81,15 +89,13 @@ sidebar:
         - text: "Dr. en Ingeniería Agrícola en Recursos Hídricos"
           inst: "Universidad de Concepción"
           time: "03/2014 - 09/2017"
-          details: "Tesis: Sequía agrícola en Chile: Desde la evaluación a la predicción usando datos satelitales"
+          #details: "Tesis: Sequía agrícola en Chile: Desde la evaluación a la predicción usando datos satelitales"
         - text: "Ingeniero Civil"
           inst: "Universidad de Concepción"
           time: "03/2000 - 09/2007"
           # details: "Thesis: Modularity Maximization"
     - name: Contacto
       items:
-        - icon: map-marker
-          text: Providencia, Santiago, Chile
         - icon: phone
           text: "+56 9684 77864"
         - icon: envelope
@@ -97,17 +103,20 @@ sidebar:
         - icon: home
           text: francisco-zambrano.cl
           href: https://francisco-zambrano.cl
+        - icon: graduation-cap
+          text: Google Scholar
+          href: https://scholar.google.com/citations?user=mKQRdOEAAAAJ&hl=es
         - icon: orcid
           text: 0000-0001-6896-8534
           href: https://orcid.org/0000-0001-6896-8534
         - icon: researchgate
-          text: Francisco-Zambrano
+          text: Researchgate
           href: https://www.researchgate.net/profile/Francisco-Zambrano-5?ev=hdr_xprf
         - icon: linkedin
-          text: frzambra
+          text: LinkedIn
           href: https://www.linkedin.com/in/frzambra
         - icon: github
-          text: frzambra
+          text: Github
           href: https://github.com/frzambra
 execute: 
   echo: false

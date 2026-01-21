@@ -5,5 +5,11 @@
             anchorcolor = blue]{hyperref}
 
 \newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}       
-\usepackage{academicons}
 \usepackage{fontawesome5}
+\usepackage{academicons}
+
+\renewcommand*{\googlescholarsocialsymbol}{\aiGoogleScholar~}
+
+\AtBeginDocument{%
+  \social[googlescholar]{https://scholar.google.com/citations?user=mKQRdOEAAAAJ&hl=es}%
+}

@@ -27,6 +27,10 @@ sidebar:
           exp:
             text: "5+ yrs."
             num: .6
+        - text: MySQL / PostgreSQL
+          exp:
+            text: "5+ yrs."
+            num: .6
         - text: CI/CD
           exp: 
             text: "5 yrs."
@@ -47,18 +51,22 @@ sidebar:
           exp: 
             text: "6 yrs."
             num: 0.7
-        - text: Prototyping \newline (R-Shiny/Pyrhon-Streamlit)
+        - text: Prototyping \newline (R-Shiny/Python-Streamlit)
           exp: 
             text: "5 yrs."
             num: 0.6
-    - name: Software
+    - name: Python libraries
       items:
-        - Git
-        - RStudio - Positron
-        - VS Code
-        - Terminal 
-        - QGIS
-        - SAGA
+        - NumPy, Pandas, Matplotlib
+        - GeoPandas, rasterio, xarray, rioxarray, fiona
+        - scikit-learn, PyTorch
+        - streamlit
+    - name: R packages
+      items:
+        - tidyverse
+        - terra,sf,tmap
+        - tidymodels
+        - shiny
     - name: Spatial data
       items:
         - MODIS
@@ -68,10 +76,10 @@ sidebar:
         - Landsat 7/8/9
         - SoilGrid
         - CMIP6
-    - name: Awards
-      items:
-        - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
-        - PhD Scholarship, National Agency for Research and Development, Chile, 2014.
+    # - name: Awards
+    #   items:
+    #     - Hackaton Winner in the OpenGeoHub Summer School, Siegburg, Germany, 2022.
+    #     - PhD Scholarship, National Agency for Research and Development, Chile, 2014.
     - name: Languages
       items:
         - English - Advanced (B2-C1)
@@ -81,15 +89,13 @@ sidebar:
         - text: "Ph.D in Agricultural Engineering, Mention in Water Resources"
           inst: "Universidad de Concepción"
           time: "03/2014 - 09/2017"
-          details: "Thesis: Agricultural Drought in Chile: From Assessment to Prediction Using Satellite Data"
+          #details: "Thesis: Agricultural Drought in Chile: From Assessment to Prediction Using Satellite Data"
         - text: "Civil Engineering"
           inst: "Universidad de Concepción"
           time: "03/2000 - 09/2007"
           # details: "Thesis: Modularity Maximization"
     - name: Contact
       items:
-        - icon: map-marker
-          text: Providencia, Santiago, Chile
         - icon: phone
           text: "+56 9684 77864"
         - icon: envelope
@@ -97,17 +103,20 @@ sidebar:
         - icon: home
           text: francisco-zambrano.cl
           href: https://francisco-zambrano.cl
+        - icon: graduation-cap
+          text: Google Scholar
+          href: https://scholar.google.com/citations?user=mKQRdOEAAAAJ&hl=es
         - icon: orcid
           text: 0000-0001-6896-8534
           href: https://orcid.org/0000-0001-6896-8534
         - icon: researchgate
-          text: Francisco-Zambrano
+          text: Researchgate
           href: https://www.researchgate.net/profile/Francisco-Zambrano-5?ev=hdr_xprf
         - icon: linkedin
-          text: frzambra
+          text: LinkedIn
           href: https://www.linkedin.com/in/frzambra
         - icon: github
-          text: frzambra
+          text: Github
           href: https://github.com/frzambra
 execute: 
   echo: false
@@ -143,7 +152,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Summary
 
-Senior Geospatial Data Scientist with 15+ years in remote sensing and spatial analysis for climate change, agriculture, and water resources. Led ANID-funded projects totaling >600M CLP, developing national platforms (ODES-Chile, SatOri) for drought monitoring and irrigation optimization. Expertise in Python, R, GIS, and ML to drive data-driven decisions in AgTech and climate risk. Seeking industry roles to apply academic insights to scalable solutions.
+Senior Geospatial Data Scientist with 15+ years in remote sensing and spatial analysis for climate change, agriculture, and water resources. Led research projects (ANID-funded) totaling >600M CLP, developing national platforms (ODES-Chile, SatOri) for drought monitoring and irrigation optimization. Expertise in R, Python, GIS, and ML/DL to drive data-driven decisions in AgTech and climate risk. Seeking industry roles to apply academic insights to scalable solutions.
 
 # Experience
 
@@ -152,7 +161,7 @@ Senior Geospatial Data Scientist with 15+ years in remote sensing and spatial an
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
-    "Senior Geospatial Scientist \\& Project Lead", "Earth Observation Center\nHemera - Universidad Mayor", "Feb 2018 - Aug 2025", "- Built and launched ODES-Chile (\\href{https://odes-chile.org/unidades}{\\color{blue}{https://odes-chile.org}}) - national drought observatory \\& early-warning system processing ERA5-Land, MODIS, CHIRPS at country scale (1,000-10,000 monthly users including Ministry of Agriculture). \\newline - Designed and deployed SatOri (\\href{https://s4tori.cl/app}{\\color{blue}{https://s4tori.cl}}) - operational satellite irrigation optimization platform for cherry orchards using Sentinel-2 + meteorological data + ML to predict stem water potential and deliver irrigation recommendations. \\newline - Developed and released national PM2.5 forecasting dashboard (2025) combining SINCA stations + satellite aerosol data + ML (\\href{https://frzambra.shinyapps.io/app_pm25}{\\color{blue}{https://frzambra.shinyapps.io/app\\_pm25}}). \\newline - Secured and directed \\>600M CLP (≈ US\\$650k) in competitive grants as Principal Investigator. \\newline - Published lead-author papers in Remote Sensing of Environment, Agricultural Water Management, Earth's Future",
+    "Senior Geospatial Scientist \\& Project Lead", "Earth Observation Center\nHemera - Universidad Mayor", "Feb 2018 - Aug 2025", "- Built and launched ODES-Chile (\\href{https://odes-chile.org/app/unidades}{\\color{blue}{https://odes-chile.org}}) - national drought observatory \\& early-warning system processing ERA5-Land, MODIS, CHIRPS at country scale (1,000-10,000 monthly users including Ministry of Agriculture). \\newline - Designed and deployed SatOri (\\href{https://s4tori.cl/app}{\\color{blue}{https://s4tori.cl}}) - operational satellite irrigation optimization platform for cherry orchards using Sentinel-2 + meteorological data + ML to predict stem water potential and deliver irrigation recommendations. \\newline - Developed and released national PM2.5 forecasting dashboard (2025) combining SINCA stations + satellite aerosol data + ML (\\href{https://frzambra.shinyapps.io/app_pm25}{\\color{blue}{https://frzambra.shinyapps.io/app\\_pm25}}). \\newline - Secured and directed \\>600M CLP (≈ US\\$650k) in competitive grants as Principal Investigator. \\newline - Published lead-author papers in Remote Sensing of Environment, Agricultural Water Management, Earth's Future",
     "Visiting Doctoral Researcher", "Faculty of Geo-Information Science and Earth Observation (ITC)\n University of Twente, Enschede, The Netherlands", "Sep - Dec 2016", "- Built agricultural productivity decline models using MODIS/CHIRPS time-series and spatial analytics; published in Remote Sensing of Environment (impact: policy-relevant for Chilean drought mitigation).",
     "Visiting Doctoral Researcher", "CALMIT/NDMC \n University of Nebraska, United States", "Jan-Jun 2016", "- Evaluated satellite precipitation products for drought monitoring; results in Atmospheric Research, informing national agroclimate reports."
     # "Research Assistant", "INIA Quilamapu", "2012 - 2015", "Automated monthly drought/agroclimate reporting using climate station and satellite data, integrated into regional decision-making tools.",
