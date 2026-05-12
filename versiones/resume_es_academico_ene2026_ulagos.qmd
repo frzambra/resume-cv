@@ -155,7 +155,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Resumen
 
-Investigador con más de 15 años de experiencia en análisis avanzado de datos y teledetección aplicados a agricultura de precisión, clima y gestión de recursos hídricos. Investigador responsable de proyectos ANID (FONDECYT, FONDEF), con especialización en modelación predictiva, machine learning y análisis espacio-temporal para el monitoreo de cultivos, estrés hídrico y optimización del riego. Amplio dominio de R y Python, visualización de datos y desarrollo de herramientas analíticas transferibles a sistemas productivos agrícolas, orientadas a mejorar eficiencia hídrica, productividad y toma de decisiones basada en evidencia.
+Académico e investigador con más de 15 años de experiencia en análisis avanzado de datos y teledetección aplicados a agricultura de precisión, clima y gestión de recursos hídricos. Investigador responsable de proyectos ANID (FONDECYT, FONDEF), con especialización en modelación predictiva, machine learning y análisis espacio-temporal para el monitoreo de cultivos, estrés hídrico y optimización del riego. Amplio dominio de R y Python, visualización de datos y desarrollo de herramientas analíticas transferibles a sistemas productivos agrícolas, orientadas a mejorar eficiencia hídrica, productividad y toma de decisiones basada en evidencia.
 
 # Experiencia 
 

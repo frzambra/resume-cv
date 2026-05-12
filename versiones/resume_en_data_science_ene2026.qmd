@@ -33,8 +33,12 @@ sidebar:
             num: .6
         - text: CI/CD
           exp: 
-            text: "5 yrs."
+            text: "5+ yrs."
             num: 0.3
+        - text: Claude Code (CLI) + GitHub
+          exp:
+            text: "0.5+ yrs"
+            num: .3
         - text: Google Earth Engine
           exp:
             text: "3 yrs,"
@@ -152,7 +156,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Summary
 
-Senior Geospatial Data Scientist with 15+ years in remote sensing and spatial analysis for climate change, agriculture, and water resources. Led research projects (ANID-funded) totaling >600M CLP, developing national platforms (ODES-Chile, SatOri) for drought monitoring and irrigation optimization. Expertise in R, Python, GIS, and ML/DL to drive data-driven decisions in AgTech and climate risk. Seeking industry roles to apply academic insights to scalable solutions.
+Senior Data Scientist specializing in environmental, agricultural, and climate risk systems, with a focus on decision-making and scaling analytical models. Over 15 years of experience in remote sensing, spatial analysis, and applied data science. I have led ANID-funded R&D projects totaling over CLP 600 million, developing national data platforms (ODES-Chile, SatOri) for drought monitoring, water management, and irrigation optimization. I possess strong expertise in Python, R, GIS, and machine learning to transform complex data into operational and scalable solutions in AgTech and climate risk contexts. I am seeking roles in the industry where I can translate scientific knowledge into real and measurable impact.
 
 # Experience
 
@@ -184,14 +188,18 @@ tibble::tribble(
 <!--       cvevents(when = "dates", what = "title", where = "role", descr = "details") -->
 <!-- ``` -->
 
-# Selected Publications
+# Latest Publications
 
-1.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. Earth’s Future. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
+1. **Zambrano, F.**, Herrea, A., Molina-Roco, M. Explainable Machine Learning for Wheat Biomass Integrating Sentinel-1/2, PlanetScope and In-Situ Weather Data. 2026. **Remote Sensing Applications: Society and Environment (F.I. 4.5).** (Under review). [https://doi.org/10.31223/X5KJ1K](https://doi.org/10.31223/X5KJ1K)
 
-2. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. *Agricultural Water Management, 318*, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
+2.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. **Earth’s Future (F.I. 8.2)**. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
 
-3. **Zambrano, F.**, Vrieling, A., Nelson, A., Meroni, M., Tadesse, T., 2018. Prediction of drought-induced reduction of agricultural productivity in Chile from MODIS, rainfall estimates, and climate oscillation indices. Remote Sensing of Environment 219, 15–30. [https://doi.org/10.1016/j.rse.2018.10.006](https://doi.org/10.1016/j.rse.2018.10.006)
+3. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. **Agricultural Water Management (F.I. 6.5)**, 318, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
 
-4. **Zambrano, F.**, Wardlow, B., Tadesse, T., Lillo-Saavedra, M., Lagos, O., 2017. Evaluating satellite-derived long-term historical precipitation datasets for drought monitoring in Chile. Atmospheric Research 186, 26–42. [https://doi.org/10.1016/j.atmosres.2016.11.006](https://doi.org/10.1016/j.atmosres.2016.11.006)
+4. Duran-Llacer, I., Gómez-Escalonilla Canales, V., Aliaga-Alvarado, M., Arumí, J.L., **Zambrano, F.**, Rodríguez-López, L., Martínez-Retureta, R., Martínez-Santos, P., 2025. Approach to mapping groundwater-dependent ecosystems through machine learning in central Chile. **Groundwater for Sustainable Development (F.I. 5.6)** 31, 101526. [https://doi.org/10.1016/j.gsd.2025.101526](https://doi.org/10.1016/j.gsd.2025.101526)
 
+5. Duran-Llacer, I., Salazar, A. A., Mondaca, P., Rodríguez-López, L., Martínez-Retureta, R., **Zambrano, F.**, Llanos, F., & Frappart, F. (2025). Influence of Avocado Plantations as Driver of Land Use and Land Cover Change in Chile’s Aconcagua Basin. **Land (F.I. 3.2)**, 14(4), 750. [https://doi.org/10.3390/land14040750](https://doi.org/10.3390/land14040750)
 
+6. **Zambrano, F.**, 2023. Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile, in: Vijay P. Singh Deepak Jhajharia, R.M., Kumar, R. (Eds.), Integrated Drought Management, Two Volume Set. CRC Press, p. 28.
+
+7.  Fernández, F. J., Vásquez-Lavín, F., Ponce, R. D., Garreaud, R., Hernández, F., Link, O., **Zambrano, F.**, & Hanemann, M. (2023). The economics impacts of long-run droughts: Challenges, gaps, and way forward. **Journal of Environmental Management (F.I. 8.4)**, 344, 118726. [https://doi.org/10.1016/j.jenvman.2023.118726](https://doi.org/10.1016/j.jenvman.2023.118726)

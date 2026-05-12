@@ -28,7 +28,7 @@ sidebar:
             num: .9
         - text: Machine Learning / Deep Learning
           exp:
-            text: "10+ años"
+            text: "5+ años"
             num: .8
         - text: Claude Code (CLI) + GitHub
           exp:
@@ -153,7 +153,7 @@ cvevents <- function(tbl, when, what, where, descr) {
         "{", tbl[[descr]], "}"
         )
 
-    cat(res, sep = "\n\n\n")
+    cat(res, sep = "\n")
 }
 
 cvproj <- function(tbl,what,role,items){
@@ -170,13 +170,11 @@ cvproj <- function(tbl,what,role,items){
 
 # Resumen
 
-Científico de datos e investigador con más de 15 años de experiencia en análisis avanzado de datos y remote sensing aplicados a agricultura, clima y recursos hídricos. Investigador responsable de proyectos ANID (FONDECYT, FONDEF), con especialización en modelación predictiva, machine learning y análisis espacio-temporal para monitoreo ambiental y toma de decisiones basada en evidencia. Amplio dominio de R y Python, visualización de datos y desarrollo de soluciones analíticas transferibles a políticas públicas y sistemas productivos.
+Investigador y científico de datos con más de 15 años de experiencia en análisis avanzado de datos y teledetección aplicados a agricultura, clima y recursos hídricos. Investigador responsable de proyectos ANID (FONDECYT, FONDEF), con especialización en modelación predictiva, machine learning y análisis espacio-temporal para monitoreo ambiental y toma de decisiones basada en evidencia. Amplio dominio de R y Python, visualización de datos y desarrollo de soluciones analíticas transferibles a políticas públicas y sistemas productivos.
 
 # Proyectos
 
 La Agencia Nacional de Investigación y Desarrollo (ANID) me ha otorgado financiamiento por más de **CLP 1.200 MM**.
-
-<br>
 
 ```{r}
 #| label: proj1
@@ -186,14 +184,19 @@ tibble::tribble(
     "Director, \\strong{CLP 660 MM}", "Anillos de Investigación en Áreas Temáticas 2025 (Adjudicado)", "10/2025", "Título: Hacia una adaptación agrícola sustentable en medio de la escasez de agua y la disminución de la biodiversidad en la cuenca del Aconcagua.", 
     "Director, \\strong{CLP 300 MM}","ODES-Chile (FSEQ210022)", "03/2022 - 10/2023", "Creamos ODES-Chile, un observatorio multiescalar de sequía para Chile, un sistema de alerta temprana para mitigar los impactos agrícolas y ecológicos. (\\href{https://odes-chile.org/}{\\color{blue}{link}}).", 
     "Director, \\strong{CLP 200 MM}","SatOri (ID21I10297)", "03/2022 - 12/2024", "Creamos SatOri, un sistema satelital para optimizar el riego en huertos de cerezos.
- (\\href{https://s4tori.cl/}{\\color{blue}{SatOri}}).", 
+ (\\href{https://s4tori.cl/}{\\color{blue}{link}}).", 
     "Investigador Principal, \\strong{CLP 100 MM}", "Fondecyt Iniciación 11190360","03/2020 - 03/2022", "Dirigí una investigación que evaluó la predicción de biomasa en trigo y maíz utilizando datos satelitales y técnicas de aprendizaje automático.",
-    "Universidad Mayor","Co-investigador", "2021-2025","- Patrociné el proyecto \\strong{Fondecyt Postdoctorado} titulado \\textit{Evaluación de la disponibilidad actual y futura de agua para la agricultura y los ecosistemas terrestres bajo diferentes escenarios de uso de la tierra en la cuenca del Aconcagua: Hacia la adaptación a la sequía}. 
-    - Lideré la componente de teledetección de los proyectos \\strong{Fondecyt Regular (1210526)} titulado \\textit{Sistema de monitoreo multivariado de sequía: modelado biofísico, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura} y \\strong{Anillo (ACT210007)} titulado \\textit{Modelado de redes reguladoras de genes epigenéticos en brotes de flores de cerezo en respuesta a condiciones climáticas estacionales contrastantes.}"
+    "Universidad Mayor","Co-investigador", "2021-2025",
+    "\\begin{itemize}
+    \\item Patrociné el proyecto \\strong{Fondecyt Postdoctorado} titulado \\textit{Evaluación de la disponibilidad actual y futura de agua para la agricultura y los ecosistemas terrestres bajo diferentes escenarios de uso de la tierra en la cuenca del Aconcagua: Hacia la adaptación a la sequía}.
+    \\item Lideré la componente de teledetección de los proyectos \\strong{Fondecyt Regular (1210526)} titulado \\textit{Sistema de monitoreo multivariado de sequía: modelado biofísico, teledetección e información hidroclimática para el análisis y predicción de sequías en agricultura} y del proyecto \\strong{Anillo (ACT210007)} titulado \\textit{Modelado de redes reguladoras de genes epigenéticos en brotes de flores de cerezo en respuesta a condiciones climáticas estacionales contrastantes.}
+    \\end{itemize}"
 ) |>
     cvevents(when = "dates", what = "title", where = "role", descr = "details")
 
 ```
+
+\newpage
 
 # Experiencia 
 
@@ -215,7 +218,6 @@ tibble::tribble(
 # Docencia
 
 Más de ocho años de experiencia impartiendo cursos en pregrado, magister y doctorado. He dirigido 10 tesis de pregado, 6 de magister, y estoy colaborando en la tesis de un estudiante de doctorado.
-\newline
 
 ```{r}
 #| label: teachingExperience
@@ -234,17 +236,23 @@ tibble::tribble(
 
 
 # Últimas Publicaciones 
+\small 
+\setlength{\emergencystretch}{3em} 
 
-1. **Zambrano, F.**, Herrea, A., Molina-Roco, M. Explainable Machine Learning for Wheat Biomass Integrating Sentinel-1/2, PlanetScope and In-Situ Weather Data. 2026. **Remote Sensing Applications: Society and Environment (F.I. 4.5).** (Under review). [https://doi.org/10.31223/X5KJ1K](https://doi.org/10.31223/X5KJ1K)
+1. **Zambrano, F.**, Fernández, F., & Molinos-Senante, M. (2026). When irrigation cannot keep pace: aridification, crop composition, and the spatial concentration of agricultural water use efficiency decline in central Chile. **Agricultural Water Managamenet**. (In preparation). https://doi.org/10.31223/x5qf59 
 
-2.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. **Earth’s Future (F.I. 8.2)**. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
+2. **Zambrano, F.**, Herrea, A., Molina-Roco, M. Multi-Sensor Fusion for Wheat Above-Ground Biomass Estimation: Sensor Contribution Analysis Under Leave-One-Site-Out Spatial Validation. 2026. **IEEE Geoscience and Remote Sensing Letters (F.I. 4.4).** (Under review). 
 
-3. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. **Agricultural Water Management (F.I. 6.5)**, 318, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
+3. Saavedra, G. M., Univaso, L., Sepúlveda, L., Gaete-Loyola, J., Nuñez, C., Lillo-Carmona, V., Castillo, V., **Zambrano, F.**, & Almeida, A. M. (2026). Integrating Metabolomics, Physiology and Satellite Vegetation Indices to Characterize Dormancy Onset in Two Sweet Cherry Genotypes.**Horticulturae (F.I. 3.0)**, 12(4), 443. https://doi.org/10.3390/horticulturae12040443
 
-4. Duran-Llacer, I., Gómez-Escalonilla Canales, V., Aliaga-Alvarado, M., Arumí, J.L., **Zambrano, F.**, Rodríguez-López, L., Martínez-Retureta, R., Martínez-Santos, P., 2025. Approach to mapping groundwater-dependent ecosystems through machine learning in central Chile. **Groundwater for Sustainable Development (F.I. 5.6)** 31, 101526. [https://doi.org/10.1016/j.gsd.2025.101526](https://doi.org/10.1016/j.gsd.2025.101526)
+4.  **Zambrano, F.**, Anton, V., Meza, F., Duran-llacer, I., Fernández, F., Venegas-González, A., Raab, N., Craven, D., 2025. From Drought to Aridification: Land-cover fingerprints of a drying Chile. **Earth’s Future (F.I. 8.2)**. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)
 
-5. Duran-Llacer, I., Salazar, A. A., Mondaca, P., Rodríguez-López, L., Martínez-Retureta, R., **Zambrano, F.**, Llanos, F., & Frappart, F. (2025). Influence of Avocado Plantations as Driver of Land Use and Land Cover Change in Chile’s Aconcagua Basin. **Land (F.I. 3.2)**, 14(4), 750. [https://doi.org/10.3390/land14040750](https://doi.org/10.3390/land14040750)
+5. **Zambrano, F.**, Herrera, A., Olguín, M., Miranda, M., Garrido, J., & Almeida, A. M. (2025). Prediction of the daily spatial variation of stem water potential in cherry orchards using weather and Sentinel-2 data. **Agricultural Water Management (F.I. 6.5)**, 318, 109721. [https://doi.org/10.1016/j.agwat.2025.109721](https://doi.org/10.1016/j.agwat.2025.109721)
 
-6. **Zambrano, F.**, 2023. Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile, in: Vijay P. Singh Deepak Jhajharia, R.M., Kumar, R. (Eds.), Integrated Drought Management, Two Volume Set. CRC Press, p. 28.
+6. Duran-Llacer, I., Gómez-Escalonilla Canales, V., Aliaga-Alvarado, M., Arumí, J.L., **Zambrano, F.**, Rodríguez-López, L., Martínez-Retureta, R., Martínez-Santos, P., 2025. Approach to mapping groundwater-dependent ecosystems through machine learning in central Chile. **Groundwater for Sustainable Development (F.I. 5.6)** 31, 101526. [https://doi.org/10.1016/j.gsd.2025.101526](https://doi.org/10.1016/j.gsd.2025.101526)
 
-7.  Fernández, F. J., Vásquez-Lavín, F., Ponce, R. D., Garreaud, R., Hernández, F., Link, O., **Zambrano, F.**, & Hanemann, M. (2023). The economics impacts of long-run droughts: Challenges, gaps, and way forward. **Journal of Environmental Management (F.I. 8.4)**, 344, 118726. [https://doi.org/10.1016/j.jenvman.2023.118726](https://doi.org/10.1016/j.jenvman.2023.118726)
+7. Duran-Llacer, I., Salazar, A. A., Mondaca, P., Rodríguez-López, L., Martínez-Retureta, R., **Zambrano, F.**, Llanos, F., & Frappart, F. (2025). Influence of Avocado Plantations as Driver of Land Use and Land Cover Change in Chile’s Aconcagua Basin. **Land (F.I. 3.2)**, 14(4), 750. [https://doi.org/10.3390/land14040750](https://doi.org/10.3390/land14040750)
+
+8. **Zambrano, F.**, 2023. Four decades of satellite data for agricultural drought monitoring throughout the growing season in Central Chile, in: Vijay P. Singh Deepak Jhajharia, R.M., Kumar, R. (Eds.), Integrated Drought Management, Two Volume Set. CRC Press, p. 28.
+
+9.  Fernández, F. J., Vásquez-Lavín, F., Ponce, R. D., Garreaud, R., Hernández, F., Link, O., **Zambrano, F.**, & Hanemann, M. (2023). The economics impacts of long-run droughts: Challenges, gaps, and way forward. **Journal of Environmental Management (F.I. 8.4)**, 344, 118726. [https://doi.org/10.1016/j.jenvman.2023.118726](https://doi.org/10.1016/j.jenvman.2023.118726)
