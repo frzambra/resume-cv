@@ -206,6 +206,7 @@ tibble::tribble(
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
+    "Académico Investigador", "Facultad de Medicina Veterinaria y Agronomia - Universidad de Las Américas", "05/2026 - a la fecha", "",
     "Profesor Asociado", "Centro de Observación de la Tierra\nHemera - Universidad Mayor", "02/2018 - 08/2025", "Me adjudiqué y dirigí proyectos financiados por ANID por más de 600 millones. Lideré el desarrollo de las plataformas \\href{https://odes-chile.org/}{\\color{blue}{ODES-Chile}} y \\href{https://s4tori.cl/}{\\color{blue}{SatOri}}, enfocadas en la adaptación al cambio climático mediante observación de la tierra y análisis espacial. ",
     "Investigador Doctoral Visitante", "Facultad de Ciencias de Geoinformación y Observación de la Tierra (ITC)\n Universidad de Twente, Enschede, The Netherlands", "09/2016 - 12/2016", "Lideré un estudio para predecir la disminución de la productividad agrícola inducida por sequías en Chile, integrando series temporales de datos satelitales (MODIS, CHIRPS) y técnicas avanzadas de análisis espacial. Los resultados de esta investigación fueron publicados en el journal Remote Sensing of Environment.",
      "Investigador Doctoral Visitante", "CALMIT/NDMC, Estados Unidos", "01/2016 - 06/2016", "Lideré un estudio sobre la evaluación de productos satelitales para estimar la precipitación en Chile y su aplicabilidad en el monitoreo de sequías. Los resultados fueron publicados en el journal Atmospheric Research."
